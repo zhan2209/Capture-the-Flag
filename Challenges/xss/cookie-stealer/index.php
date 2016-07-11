@@ -25,28 +25,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Lorem Ipsum Blog</title>
-<link rel="stylesheet" type="text/css" href="app.css">
+	<title>Lorem Ipsum Blog</title>
+	<link rel="stylesheet" type="text/css" href="app.css">
 </head>
 <body>
-<div class="center">
+	<div class="center">
 <?php if (isAdmin()): ?>
-	<h1>Welcome Admin</h1>
-	<div class="flag">Congratulations! The flag is <?= $flag ?>.</div>
+		<h1>Welcome Admin</h1>
+		<div class="flag">Congratulations! The flag is <?= $flag ?>.</div>
 <?php else: ?>
 		<h1>Welcome Anonymous</h1>
 <?php endif; ?>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae ligula metus. Integer pellentesque mauris eget tempor viverra. Ut mi nulla, molestie malesuada consequat porttitor, consectetur at diam. Nam condimentum justo vitae tristique rutrum. Nullam consequat lectus et nulla condimentum, vel sagittis sem molestie. Aenean viverra ex a metus sagittis bibendum. Phasellus vitae faucibus lacus. Sed interdum viverra arcu a pellentesque. Sed vehicula risus vitae metus varius ornare. Proin rhoncus nunc a ornare dignissim.</p>
-<p>Nam ac imperdiet elit. Nam pretium felis semper consectetur condimentum. Sed interdum nisl non aliquet blandit. Donec tortor sapien, scelerisque sit amet est vitae, luctus sagittis massa. Ut nec consequat tellus, nec tempus ligula. Pellentesque fringilla ullamcorper fermentum. Etiam nec iaculis est. Duis fermentum imperdiet arcu, in faucibus odio ultricies nec.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae ligula metus. Integer pellentesque mauris eget tempor viverra. Ut mi nulla, molestie malesuada consequat porttitor, consectetur at diam. Nam condimentum justo vitae tristique rutrum. Nullam consequat lectus et nulla condimentum, vel sagittis sem molestie. Aenean viverra ex a metus sagittis bibendum. Phasellus vitae faucibus lacus. Sed interdum viverra arcu a pellentesque. Sed vehicula risus vitae metus varius ornare. Proin rhoncus nunc a ornare dignissim.</p>
+		<p>Nam ac imperdiet elit. Nam pretium felis semper consectetur condimentum. Sed interdum nisl non aliquet blandit. Donec tortor sapien, scelerisque sit amet est vitae, luctus sagittis massa. Ut nec consequat tellus, nec tempus ligula. Pellentesque fringilla ullamcorper fermentum. Etiam nec iaculis est. Duis fermentum imperdiet arcu, in faucibus odio ultricies nec.</p>
 
-<h2>Comments</h2>
+		<h2>Comments</h2>
 
-<form method="post" action="add-comment.php">
-	<textarea name="comment" placeholder="Post a new comment" rows="4" cols="50"></textarea>
-	<br/>
-	<input type="submit" value="Post Comment"></input>
-</form>
+		<form method="post" action="add-comment.php">
+			<textarea name="comment" placeholder="Post a new comment" rows="4" cols="50"></textarea>
+			<br/>
+			<input type="submit" value="Post Comment"></input>
+		</form>
 
 <?php
 	foreach ($comments_json["comments"] as $index=>$comment) {
@@ -61,6 +61,6 @@
 			';
 	}
 ?>
-</div>
+	</div>
 </body>
 </html>
