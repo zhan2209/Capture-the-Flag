@@ -1,6 +1,12 @@
 # Change Browser Challenge
 
-To solve this challenge, you need to change your browser to "HACKED". Once you do that, you will see the flag on the page.
+## Description
+
+Spoof your browser so that it says "HACKED" in the request. Once you do that, it will return the flag.
+
+## Hint
+
+Check out the User-Agent header.
 
 ## Write-Up
 

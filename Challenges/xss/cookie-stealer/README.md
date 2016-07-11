@@ -1,14 +1,14 @@
 # XSS Cookie Stealer Challenge
 
-To solve this challenge, you need to exploit an XSS vulnerability and grab the admin's session ID. Once you log in as admin, you will see the flag.
+## Description
+
+This is a classic XSS attack. Find and exploit an XSS vulnerability to steal the admin's session ID. The admin will view this page every 10 seconds. 
+Once you have their session ID, log in as admin and capture the flag.
 
 ## Prerequisites
 
 1. Download and install phantom.js. http://phantomjs.org/download.html
-1. Run the xss-bot to continuously load the vulnerable page as admin.
-
-    while sleep 10; do phantomjs --ignore-ssl-errors=true --local-to-remote-url-access=true --web-security=false --ssl-protocol=any xss-bot.js; done;
-
+1. Run the run.bat or run.sh script to continuously load the vulnerable page as admin.
 
 ## Write-Up
 
