@@ -1,0 +1,25 @@
+.flag {
+	border-left: 5px solid #ffff00;
+	background-color: #ffffe6;
+	padding: 10px;
+	margin: 10px;
+}
+.hint {
+	border-left: 5px solid #0066ff;
+	background-color: #e6f0ff;
+	padding: 10px;
+	margin: 10px;
+}
+.center {
+    margin: auto;
+    width: 65%;
+	min-width: 400px;
+    padding: 10px;
+}
+
+.comment {
+	border-left: 5px solid #0066ff;
+	background-color: #e6f0ff;
+	padding: 10px;
+	margin: 10px;
+}
