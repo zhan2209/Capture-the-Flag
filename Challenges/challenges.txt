@@ -1,0 +1,91 @@
+FLAG LEVELS
+
+Nuclear Javascript : flag=C301NK442L6
+"Nuclear launch detected. You'll need to figure out the password to get the cancellation code!"
+directory: /launch
+category: easy
+
+Buffer Overflow : flag=controlling_%eip_feels_great
+"You've noticed an overflow vulnerability in this program; exploit it!"
+url: https://picoctf.com/problem-static/binary/Overflow2/overflow2.html#1
+category: intermediate
+
+Substitution : flag=letitgo
+"Putin has encrypted a file containing his favorite song, along with the flag! Can you crack it?"
+attachment: encrypted_song.txt
+category: intermediate
+
+Function Address : flag=08048444
+"You found this file, but realized you can't do anything useful without the 'find_string' function. The flag is
+its address!"
+attachment: stringz
+category: easy
+
+Toaster Control : flag=flag_c49bdkeekr5zqgvc20vc
+"The toaster defense system has gone haywire and needs to be shutdown. The problem: someone's removed the
+link to the shutdown code! You'll need to find another way to power down the system!"
+url: http://web2014.picoctf.com/toaster-control-1040194/
+category: easy
+
+Cookie Monster : flag=session_cookies_are_the_most_delicious
+"This site only allows a certain number of users to be logged in at once, and they are full up. Can you find
+a way to bypass this restriction?"
+url: http://web2014.picoctf.com/delicious-5850932/login.php
+category: easy
+
+Injection 1 : flag=sql_injection_is_craazzyyyy
+"Login to get the flag! But not as just any user; you'll need max authorization. I wonder which users get
+that level of clearance..."
+directory: /injection1
+category: easy
+
+Injection 2: flag=0k4y_N0t_tH47_cR@zY
+"Alright, we've fixed our login system. Now nobody will be able to get the flag!"
+directory: /injection2
+category: difficult
+
+The Mystery File : flag=Joke picture
+"You found a mysterious file while rummaging around your friend's old computer. you can tell it is
+some sort of image file, but there is something fishy about it... unlock the file's secret and find the
+flag!"
+attachment: mystery.png
+category: difficult
+
+Potter's Predicament : flag=Harry Potter
+"Hogwarts decided to up their security - owls just aren't as reliable as they once were. The only problem is,
+now the students are struggling to read their acceptance letters! There must be something hidden here..."
+attachement: potter.pdf
+category: easy
+
+Broken File : flag=Famous last words
+"Your friend sent you a .png file, but it doesn't seem to want to open. Maybe there is more to it than meets
+the eye..."
+attachment: broke_file.png
+category: easy
+
+Advising a Fool : flag=English words
+"The world's greatest author has written what he calls his masterpiece, but has deemed only those smart
+enough to crack his code worthy to read it. Are you? Take a look at the text file and find out for yourself!"
+attachement: fool.txt
+category: intermediate
+
+Hidden : flag=script function in HTML
+"There seems to be more to this page than meets the eye... Dig deep to find the flag!"
+directory: /hidden
+category: intermediate
+
+Redacted : flag=one_two_three_four
+"You found this letter, but all the important information is covered by black boxes..."
+attachment: redacted.pdf
+category: intermediate
+
+Interesting Cipher : flag=interesting cipher
+"Your friend gave you some light reading on Félix Delastelle - but he encrypted it, saying that's what Delastelle
+would have wanted! You'll need to crack the ciphers to find the flag."
+attachment: interesting_cipher.txt
+category: easy
+
+More than Meets the Eye
+"This .png file doesn't seem to be working. Take a closer look and figure out what's going on!"
+attachment: zipper.pdf
+category: intermediate

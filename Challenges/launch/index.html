@@ -1,0 +1,63 @@
+<html><head></head><body><doctype! html="">
+<meta charset="UTF-8">
+<title>Nuclear Site</title>
+<style>
+#pass {
+	background-color: #000000;
+	color: #ffffff;
+	border: 1px #000000 solid;
+	font-size: 30px;
+}
+
+#sub {
+	background-color: #bb0000;
+	color: #ffffff;
+	border: 2px #000000 solid;
+	font-size: 30px;
+}
+
+h1 {
+	color: #0f0f0f;
+	font-family: monospace, serif;
+	margin-top: 140px;
+}
+
+div {
+	border: 5px #000000 solid;
+	width: 50%;
+	height: 50%;
+	background-color: #c0c0c0;
+}
+
+#valid {
+	font-family: monospace, serif;
+	font-size: 20px;
+}
+</style>
+<center>
+<br><br><br><br><br><br><br><br><br>
+<div>
+<h1>Login as launch admin:</h1>
+<br>
+<form name="password" method="post" onsubmit="return validate()">
+<input type="password" id="pass" name="passinp" placeholder="Password" required=""><br><br>
+<input type="submit" id="sub" value="Login"><br>
+<p id="valid"></p>
+</form>
+</div>
+</center>
+<script>
+function validate() {
+	var pass = document.forms["password"]["passinp"].value;
+	if (pass == "blacksheepwall") {
+		document.getElementById("valid").style.color = "green";
+		document.getElementById("valid").innerHTML = "Password correct! Cancellation code: C301NK442L6";
+	} else {
+		document.getElementById("valid").style.color = "red";
+		document.getElementById("valid").innerHTML = "Password incorrect";
+	}
+	return false;
+}
+</script>
+
+</doctype!></body></html>
