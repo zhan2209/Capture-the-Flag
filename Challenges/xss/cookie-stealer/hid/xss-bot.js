@@ -1,5 +1,5 @@
 var page = require('webpage').create();
-var host = "192.168.33.10";
+var host = "10.11.10.11";
 var path = "/xss/cookie-stealer/index.php"
 var url = "http://"+host+path;
 var timeout = 2000;
