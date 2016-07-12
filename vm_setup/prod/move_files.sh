@@ -8,6 +8,9 @@ CHALLENGES=/vagrant/Challenges
 HTML=/var/www/html
 HID=/var/www/hid
 
+mysqluser=root
+mysqlpass=iNfC16s3c
+
 if [ ! -d /var/www/html ]; then
 	echo "[+] Creating /var/www/html directory..."
 	sudo mkdir /var/www/html
@@ -52,6 +55,17 @@ for category in $CHALLENGES/* ; do
 					fi
 					echo " [.] Copying $h into $HID/$ext..."
 					sudo cp -r $h/* $HID/$ext
+				done
+			fi
+			if [ -d $challenge/database ]; then
+				prefix="$challenge/database/"
+				suffix=".sql"
+				for db in $challenge/database/* ; do
+					dbname=${db/$prefix/$replace_with}
+					dbname=${dbname/$suffix/$replace_with}
+					echo "[+] Importing database $dbname..."
+					mysql -u $mysqluser -p$mysqlpass -Bse "create database $dbname;use $dbname;"
+					mysql -u $mysqluser -p$mysqlpass $dbname < $db
 				done
 			fi
 		done
