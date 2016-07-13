@@ -12,3 +12,7 @@ sudo apt-get -y install mysql-server-5.6 php-mysql apache2 php7.0
 
 # install phantomjs
 sudo apt-get install phantomjs
+
+# modify php.ini file
+sudo sed -i 's/;extension=php_mysqli.dll/extension=php_mysqli.dll/g' /etc/php/7.0/cli/php.ini
+sudo /etc/init.d/apache2 restart
