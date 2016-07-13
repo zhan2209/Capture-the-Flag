@@ -1,9 +1,14 @@
 # Injection 2
 
-This challenge contains a more difficult SQL injection vulnerability, where you must format your attack to
-make the table return a fake row containing fake information.
+Description: Alright, we've fixed our login system. Now nobody will be able to get the flag!
+Hint: Maybe there's a way to add fake rows to the result of a query...
+Flag: flag{0k4y_N0t_tH47_cR@zY}
+Category: Intermediate
 
 ## Write-Up
+
+This challenge contains a more difficult SQL injection vulnerability, where you must format your attack to
+make the table return a fake row containing fake information.
 
 As seen in the code, user and password are check separately, meaning we can't just comment out the password check.
 We can turn debug mode on using Chrome's dev tools, which allows us to see the query we make.

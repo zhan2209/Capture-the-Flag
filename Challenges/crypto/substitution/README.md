@@ -1,11 +1,14 @@
 # Substitution
 
-This challenge uses a classic cipher to encrypted the song 'Let It Go' from Disney's Frozen. The flag
-is hidden within the lyrics.
+Description: Putin has encrypted a file containing his favorite song, along with the flag! Can you crack it? Remember to format the flag as: flag{foo}
+Hint: https://en.wikipedia.org/wiki/Letter_frequency
+Flag: flag{letitgo}
+Category: Intermediate
 
 ## Write-Up
 
 Substitution.py is one example of how this problem can be solved. It reads the .txt file and counts
-letter frequency, as well as n-tuple frequencies. As you figure out letters, you can make the program
-put them into the .txt file to make things more readable. You can figure out which letters should go
-where by using a letter frequencies chart, such as the one at http://scottbryce.com/cryptograms/stats.htm
+letter and word frequency (using n_grams and n_words, respectively). Using a letter frequency chart, try to match
+the most common letters in the cipher with the most common letters used in English. As you replace more
+letters, it is easier to discover n-tuples in the cipher, allowing for larger replacements. Eventually,
+you will be able to get all the letters replaced and decrypt the entire song.

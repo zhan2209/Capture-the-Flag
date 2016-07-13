@@ -1,7 +1,12 @@
 # Injection 1
 
-This challenge contains a very basic SQL injection vulnerability that must be exploited to get the flag.
+Description: Login to get the flag! But not as just any user; you'll need max authorization. I wonder which users get that level of clearance...
+Hint: Try logging in as 'admin'
+Flag: flag{sql_injection_is_craazzyyyy}
+Category: Easy
 
 ## Write-Up
 
-This is a classic SQL injection example - solvable with a simple admin'#
+This is a classic SQL injection example - solvable with a closing quote and comment:
+
+	admin'#

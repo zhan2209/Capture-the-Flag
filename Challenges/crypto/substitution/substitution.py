@@ -1,11 +1,8 @@
 import re
 from collections import Counter
 
-FILE = 'lyrics.txt'
-code = {'a':'R', 'b':'X', 'c':'T', 'd':'F', 'e':'P', 'f':'V', 'g':'L', 'h':'O',
-		'i':'K', 'j':'U', 'k':'B', 'l':'M', 'm':'C', 'n':'A', 'o':'Y', 'p':'J',
-		'q':'Z', 'r':'W', 's':'E', 't':'S', 'u':'H', 'v':'N', 'w':'I', 'x':'D',
-		'y':'Q', 'z':'G'}
+FILE = 'attachments/encrypted_song.txt'
+code = {}
 
 def decrypt(word):
 	decoded = ''
@@ -28,7 +25,6 @@ def get_ctext(filename):
 	return data
 
 ctext = get_ctext(FILE)
-#print(ctext)
 ctext_words = filter(bool, re.split('\s', ctext))
 max_gram = 15 # no more than 15 letters per word
 n_grams = []
@@ -55,29 +51,36 @@ ending_letters = Counter()
 for word in ctext_words:
 	starting_letters[word[0]] += 1
 	ending_letters[word[-1]] += 1
-
-print(decrypt(ctext))
 	
-'''
-print("three letter words")
+
+print("most common 1-letter tuples")
+table(n_grams[0])
+print("most common 2-letter tuples")
+table(n_grams[1])
+print("most common 3-letter tuples")
+table(n_grams[2])
+print("most common 4-letter tuples")
+table(n_grams[3])
+print("most common 5-letter tuples")
+table(n_grams[4])
+print("most common 1-letter words")
+table(n_words[0])
+print("most common 2-letter words")
+table(n_words[1])
+print("most common 3-letter words")
 table(n_words[2])
-print("four letter words")
+print("most common 4-letter words")
 table(n_words[3])
-print("five letter words")
+print("most common 5-letter words")
 table(n_words[4])
-print("six letter words")
-table(n_words[5])
-print("seven letter words")
-table(n_words[6])
-print("eight letter words")
-table(n_words[7])
-'''
 
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
 	
 	
 	

@@ -1,1 +1,1 @@
-sql_injection_is_craazzyyyy
+flag{sql_injection_is_craazzyyyy}
