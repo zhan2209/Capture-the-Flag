@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Script to move files out of shared folder
+# Script to move file to vm webroot and setup databases
 #
 # Usage: /vagrant/move1.sh
 

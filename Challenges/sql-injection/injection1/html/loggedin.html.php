@@ -8,7 +8,7 @@
 	<p>You're logged in as '<?php echo $info['username']; ?>'</p>
 	<p>Your authorization level is <?php echo $info['authorization']; ?></p>
 	<?php if($info['authorization'] == 9) {
-	  $FLAG = file_get_contents("../../hid/sql-injection/injection1/flag.txt");
+	  $FLAG = file_get_contents("/var/www/hid/sql-injection/injection2/flag.txt");
 	  echo "<p>The flag is: $FLAG</p>";
 	}
 	else {
