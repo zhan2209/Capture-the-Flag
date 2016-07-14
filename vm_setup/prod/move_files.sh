@@ -55,6 +55,17 @@ for category in $CHALLENGES/* ; do
 					fi
 					echo " [.] Copying $h into $HID/$ext..."
 					sudo cp -r $h/* $HID/$ext
+					for s in $h/* ; do
+						if [ ${s: -3} == ".sh" ]; then
+							if [ ! -d /usr/scripts ]; then
+								echo "[+] Creating /usr/scripts directory..."
+								sudo mkdir /usr/scripts
+							fi
+							sudo cp $HID/$ext/run.sh /usr/scripts
+							echo "[+] Adding /usr/scripts/run.sh to crontab..."
+							echo "@reboot /usr/scripts/run.sh" | sudo crontab
+						fi
+					done
 				done
 			fi
 			if [ -d $challenge/database ]; then
