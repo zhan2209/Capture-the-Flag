@@ -12,6 +12,11 @@ sudo chmod go+x /var/www
 sudo chgrp -R www-data /var/www
 sudo chmod -R go-rwx /var/www
 sudo chmod -R g+x /var/www
+sudo chmod ugo-rw /etc
+sudo chmod ugo-rw /home/vagrant
+sudo chmod ugo-rw /lib
+sudo chmod ugo-rw /usr
+sudo chmod ugo-rw /bin
 
 # remove ssh capabilities WORKING!!
 sudo sed -i 's/Port 22/Port 24242/g' /etc/ssh/sshd_config

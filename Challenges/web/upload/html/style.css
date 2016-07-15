@@ -1,0 +1,28 @@
+
+#uploadform {
+	margin: auto;
+	width: 50%;
+	border: 2px solid black;
+	padding: 10px;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+	font-size: 1.25em;
+	font-weight: 700;
+	color: white;
+	background-color: green;
+	display: inline-block;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
