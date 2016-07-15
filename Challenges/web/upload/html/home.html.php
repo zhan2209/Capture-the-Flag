@@ -4,17 +4,24 @@
 <head><title>Welcome</title>
 <link rel="stylesheet" type="text/css" href="style.css"></head>
 <body>
-<div id='uploadform'>
-<form action="upload.php" method="post" enctype="multipart/form-data">
-	<div>Select a .<?php echo "$acceptableFileType";?> to upload:</div>
-	<div>
-		<input type="file" name="fileToUpload" id="fileToUpload" class="inputfile" onchange="validate()">
-		<label for="fileToUpload">Choose a file</label>
-	</div>
-	<div><input id='sub' type="submit" value="Upload Image" name="submit" disabled></div>
-	<div id='validity'><p>No file selected.</p></div>
-</form>
+<div class='container'>
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+		<p>Select a .<?php echo "$acceptableFileType";?> to upload:<p>
+		<div>
+			<input type="file" name="fileToUpload" id="fileToUpload" class="inputfile" onchange="validate()">
+			<label for="fileToUpload">Choose a file</label>
+		</div>
+		<div>
+			<input id='sub' type="submit" value="Upload Image" name="submit" disabled>
+		</div>
+		<div id='validity'>
+			<p>No file selected.</p>
+		</div>
+	</form>
 </div>
+<div id='gallery'>
+	<a class='link' href="./pictures.html.php">Click here to view pictures</a>
+<div>
 <script>
 	function validate() {
 		var file = document.getElementById("fileToUpload");

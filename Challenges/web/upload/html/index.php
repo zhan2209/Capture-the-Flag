@@ -1,5 +1,6 @@
 <?php
-	$dirName = 'uploads';	
+	$dirName = 'uploads';
+	
 	if(!is_dir($dirName)) {
 		mkdir($dirName, 0755);
 	}

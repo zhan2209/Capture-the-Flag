@@ -1,9 +1,35 @@
 
-#uploadform {
+.container {
+	position: relative;
 	margin: auto;
-	width: 50%;
+	justify-content: center;
 	border: 2px solid black;
-	padding: 10px;
+	height: 50%;
+	width: 50%;
+	transform: translate(0, 100%);
+}
+
+#picback {
+	position: absolute;
+	top: 5;
+	left: 5;
+}
+
+.container form {
+	text-align: center;
+}
+
+.link {
+	color: blue;
+}
+
+#gallery {
+	text-align: center;
+	margin-top: -2%;
+}
+
+.container p {
+	font-size: 30px;
 }
 
 .inputfile {
@@ -25,4 +51,21 @@
 	padding-bottom: 3px;
 	padding-left: 4px;
 	padding-right: 4px;
+	margin: 5px;
+}
+
+div.img {
+	display: inline-block;
+	margin: 5px;
+	border: 1px solid black;
+	width: 180px;
+}
+
+div.img:hover {
+	border: 1px solid blue;
+}
+
+div.img img {
+	width: 100%;
+	height: auto;
 }
