@@ -39,6 +39,10 @@ vagrant package --output %box%
 :: create challenges directory and copy necessary files over
 echo "[+] Creating directory 'challenge_vm' and copying files..."
 cd \
+if exist C:\challenge_vm (
+	echo "[-] Removing previous challenge_vm directory..."
+	rd /s /q "C:\challenge_vm"
+)
 mkdir challenge_vm
 cd challenge_vm
 move %p%\%box% C:\challenge_vm

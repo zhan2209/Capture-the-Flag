@@ -1,0 +1,81 @@
+.form-group {
+	background-color: #ffffff;
+	color: #000000;
+	border: 2px #ffffff solid;
+	font-size: 25px;
+}
+
+.lookup_user {
+	text-align: center;
+}
+
+#username {
+	font-size: 25px;
+}
+
+#password {
+	font-size: 25px;
+}
+
+#reg_username {
+	font-size: 25px;
+}
+
+#reg_password {
+	font-size: 25px;
+}
+
+#reg_email {
+	font-size: 25px;
+}
+
+#login-box {
+	margin: auto;
+	margin-top: 2%;
+	width: 50%;
+	height: 50%;
+	padding: 25px 25px 25px 25px;
+	border: 5px #000000 solid;
+	text-align: center;
+}
+
+#register-box {
+	margin: auto;
+	margin-top: 2%;
+	width: 50%;
+	height:50%;
+	padding: 25px 25px 25px 25px;
+	border: 5px #000000 solid;
+	text-align: center;
+}
+
+.form-action {
+	padding-top: 20px;
+}
+
+#login-button {
+	font-size: 20px;
+	border: 1px #000000 solid;
+}
+
+#register-button {
+	font-size: 20px;
+	border: 1px #000000 solid;
+}
+
+h1 {
+	margin: auto;
+	margin-top: 6%;
+	text-align: center;
+	font-size: 40px;
+}
+
+label {
+	float: left;
+	width: 20%;
+	text-align: right;
+	margin-right: -7.75em;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

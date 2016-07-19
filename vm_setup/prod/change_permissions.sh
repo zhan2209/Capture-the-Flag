@@ -17,6 +17,12 @@ sudo chmod ugo-rw /home/vagrant
 sudo chmod ugo-rw /lib
 sudo chmod ugo-rw /usr
 sudo chmod ugo-rw /bin
+sudo chmod ugo=x /var/www
+sudo chmod ugo=x /var
+sudo chmod ugo-r /var
+sudo chmod ugo-w /var
+
+sudo sed -i 's/D:ALL/D:ALL, !\/usr, !\/bin, \/bin\/ls/g' /etc/sudoers.d/vagrant
 
 # remove ssh capabilities WORKING!!
 sudo sed -i 's/Port 22/Port 24242/g' /etc/ssh/sshd_config
