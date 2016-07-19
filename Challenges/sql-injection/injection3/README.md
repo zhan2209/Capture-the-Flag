@@ -1,9 +1,18 @@
 # Injection 3
 
-Description: We've finally wised up and escaped our SQL query input. There's no way we could get hacked again!
-Hint: You'll need the name of the table that user information is stored in. There should be a SQL function that can help you create a string while getting past the mysqli_real_escape_string function.
-Flag: flag{w0w_$UcH_1nJ3c710N}
+## Description
+
+We've finally wised up and escaped our SQL query input. There's no way we could get hacked again!
+
 Category: Difficult
+
+## Hint
+
+You'll need the name of the table that user information is stored in. There should be a SQL function that can help you create a string while getting past the mysqli_real_escape_string function.
+
+## Flag
+
+flag{w0w_$UcH_1nJ3c710N}
 
 ## Write-Up
 

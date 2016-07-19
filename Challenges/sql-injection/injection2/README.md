@@ -1,9 +1,18 @@
 # Injection 2
 
-Description: Alright, we've fixed our login system. Now nobody will be able to get the flag!
-Hint: Maybe there's a way to add fake rows to the result of a query...
-Flag: flag{0k4y_N0t_tH47_cR@zY}
+## Description
+
+Alright, we've fixed our login system. Now nobody will be able to get the flag!
+
 Category: Intermediate
+
+## Hint
+
+Maybe there's a way to add fake rows to the result of a query...
+
+## Flag
+
+flag{0k4y_N0t_tH47_cR@zY}
 
 ## Write-Up
 
