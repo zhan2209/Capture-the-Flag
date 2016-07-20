@@ -30,8 +30,8 @@
 <?php endif; ?>
 		<body onload="checkCookie()">
 		<h2>Food is always delicious, isn't it?</h2>
-		<img src="/images/cookie.jpg" alt="Cookie Monster">
-		<script src="/js/Questions.js"></script>
+		<img src="./images/cookie.jpg" alt="Cookie Monster">
+		<script src="./js/Questions.js"></script>
 		<!-- <script src="backup.js"> -->
 </body>
 </html>

@@ -4,9 +4,15 @@
 
 Spoof your browser so that it says "HACKED" in the request. Once you do that, it will return the flag.
 
+Category: Easy
+
 ## Hint
 
 Check out the User-Agent header.
+
+## Flag
+
+flag{i-control-my-browser}
 
 ## Write-Up
 

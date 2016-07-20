@@ -12,3 +12,10 @@ because Vagrant will reuse boxes if they've already been named, rather than crea
 new one. Your pc username (i.e. rob.denman) is needed to check if that box already exists, 
 and if it does, it will be deleted to make room for the new one. Make sure you don't
 overwrite a box you were wanting to hold on to!
+
+NOTE: You may need to run
+
+	vagrant destroy
+	
+first if you've build the vm before; alternatively, you can delete the .vagrant directory
+before running the challenge_setup command.

@@ -29,7 +29,7 @@ CREATE TABLE `ultra_secret_users` (
   `authorization` int(11) DEFAULT NULL,
   `email` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +38,7 @@ CREATE TABLE `ultra_secret_users` (
 
 LOCK TABLES `ultra_secret_users` WRITE;
 /*!40000 ALTER TABLE `ultra_secret_users` DISABLE KEYS */;
-INSERT INTO `ultra_secret_users` VALUES (1,'admin','n0T_t3h_f1@G!',9,'admin@realemail.com'),(2,'billy','badpass',2,'william@thebomb.com'),(3,'generic_user','helloworld',3,'generic@email.org'),(4,'thatoneguy','whiskers',6,'mysteryman@secretdomain.who'),(5,'robertkarl','56quake$',3,'rob@email123.com'),(6,'Bob Loblaw','arresteddevelopment',3,'blahblahblah@moneyinthe.bananastand'),(7,'Jack Sparrow','thatsCAPTAINjacksparrow',3,'capnjack@blackpearl.gov');
+INSERT INTO `ultra_secret_users` VALUES (1,'admin','bjBUX3QzaF9mMUBHIQ==',9,'admin@realemail.net'),(2,'jonny_snow','d2ludGVyaXNjb21pbmc=',6,'jonstarkgaryen@the.wall'),(3,'bob_loblaw','YXJyZXN0ZWRkZXZlbG9wbWVudA==',2,'theresalways@moneyinthe.bananastand'),(4,'eric_cartman','bm9raXR0eXRoYXRzbXlwb3RwaWU=',8,'authority@respect.my'),(5,'walter_white','bWV0aG9kbWFu',5,'knocks@iamthe.onewho'),(6,'mclovin','aXRzdGVudGhpcnR5dGhyZWU=',4,'chikachika@yeah.fakeid');
 /*!40000 ALTER TABLE `ultra_secret_users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-07-19 17:19:03
+-- Dump completed on 2016-07-20 15:04:04

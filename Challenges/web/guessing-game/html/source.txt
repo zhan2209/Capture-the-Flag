@@ -1,0 +1,14 @@
+<?php
+  $file = 'secret-password.txt';
+  extract($_GET);
+  if(isset($attempt)) {
+    $password = trim(file_get_contents($file));
+    if($attempt === $password) {
+      echo "<p>How did you figure out the secret password?!</p>";
+      $flag = trim(file_get_contents('flag.txt'));
+      echo "<p>The flag is $flag</p>";
+    } else {
+      echo "<p>Nope! The secret password is not $attempt...</p>";
+    }
+  }
+?>

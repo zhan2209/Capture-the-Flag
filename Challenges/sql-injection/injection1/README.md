@@ -7,6 +7,7 @@ Login to get the flag! But not as just any user; you'll need max authorization. 
 Category: Easy
 
 ## Hint
+
 Try logging in as 'admin'
 
 ## Flag

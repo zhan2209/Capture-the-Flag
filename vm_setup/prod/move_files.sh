@@ -20,6 +20,10 @@ if [ ! -d /var/www/hid ]; then
 	echo "[+] Creating /var/www/hid directory..."
 	sudo mkdir /var/www/hid
 fi
+if [ -f $CHALLENGES/index.html ]; then
+		echo "[.] Copying webroot index file..."
+		sudo cp $CHALLENGES/index.html /var/www/html
+fi
 
 replace_string="/vagrant/Challenges/"
 replace_with=""
