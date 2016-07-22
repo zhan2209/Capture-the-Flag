@@ -1,0 +1,21 @@
+
+.center {
+	position: absolute;
+	top: 25%;
+	left: 25%;
+    width: 50%;
+	height: 30%;
+	min-width: 400px;
+    padding: 10px;
+	border: 3px solid black;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.center p {
+	margin-top: 1.25em;
+}
+
+.bet-btns {
+	margin-top: 1.25em;
+}
