@@ -19,8 +19,8 @@ flag{w1NN3r_w1NN3r_ch1CK3n_d1NN3r}
 For this challenge, you'll want a program like Burp Suite to intercept requests.
 
 You'll quickly realize that you'll quickly be out of money if you simply guess, so after searching
-around a bit, you'll find two key things that will help: 1) There is a cookie called TIMESTAMP, and
-2) it is created in a Javascript function when you click the 'guess' button. This means that the time
+around a bit, you'll find two key things that will help: 1) There is a cookie called TIMESTAMP, and 2) it is 
+created in a Javascript function when you click the 'guess' button. This means that the time
 is taken BEFORE the PHP code loads, and you can therefore manipulate the data before it does it's job.
 
 Realizing that random numbers are generally seeded with time, you can notice that changing the value of

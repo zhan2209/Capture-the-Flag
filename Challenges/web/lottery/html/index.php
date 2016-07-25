@@ -5,8 +5,8 @@
 	}
 
 	$file_dir = '/var/www/hid/web/lottery/';
-	$file_name = 'flag.txt';
-	$flag = file_get_contents($file_dir.$file_name);
+	$file_name = 'flag.txt.asc';
+	$flag_file = $file_dir.$file_name;
 
 	$seed = $_COOKIE['TIMESTAMP'];
 	srand($seed);
@@ -34,7 +34,7 @@
 			}
 		}
 		if($_SESSION['wallet'] >= 500) { // overwrite message if they win
-			$message = "<p>You probably just got lucky... The flag is $flag.</p>";
+			$message = "<p>You probably just got lucky... Click <a href='./$flag_file' download>here</a> for the flag.</p>";
 		} 
 		echo "</div>";
 	}
