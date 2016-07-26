@@ -28,11 +28,13 @@ h3 {
 
 .container {
 	position: relative;
-  	margin: 0 auto;
+  	margin: auto;
   	padding: 20px 30px 20px;
   	width: 310px;
   	background: #eeeeee;
   	border-radius: 3px;
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
 
 .row {

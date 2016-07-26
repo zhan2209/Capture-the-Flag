@@ -1,21 +1,83 @@
-
-.center {
-	position: absolute;
-	top: 25%;
-	left: 25%;
-    width: 50%;
-	height: 30%;
-	min-width: 400px;
-    padding: 10px;
-	border: 3px solid black;
-	text-align: center;
-	vertical-align: middle;
+html {
+	background: #ffffff url("lottery.png") no-repeat right top;
+	background-size: 100% 100%;
 }
 
-.center p {
-	margin-top: 1.25em;
+.center {
+	position: relative;
+	margin: auto;
+	padding: 20px 30px 20px;
+  	width: 600px;
+  	background: #aaaaaa;
+  	border-radius: 15px;
+  	margin-top: 15px;
+    margin-bottom: 12.5%;
+    text-align: center;
+    color: black;
+    -moz-box-shadow: 3px 3px 3px 3px #444;
+  	-webkit-box-shadow: 3px 3px 3px 3px #444;
+  	box-shadow: 3px 3px 3px 3px #444;
+}
+
+h1 {
+	position: relative;
+	margin: auto;
+	color: white;
+	font-family: Arial black;
+	text-align: center;
+	margin-top: 150px;
+}
+
+.center label {
+	color: #001122;
+	font-size: 16px;
+	font-family: Helvetica;
+}
+
+#wallet {
+	color: #001122;
+	font-size: 18px;
+	font-family: Helvetica;
 }
 
 .bet-btns {
 	margin-top: 1.25em;
+	color: black;
+}
+
+h3 {
+	font-family: Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #000022;
+    border-bottom: 2px solid #ffffff;
+  	text-align: center;
+  	padding-bottom: 1.5em;
+}
+
+#guess {
+	height: 30px;
+	padding: 5px 5px;
+	font-size: 15px;
+	border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+#submit-guess {
+	width: 125px;
+	color: #ffffff;
+	background-color: #0077b3;
+	border-color: #0077b3;
+	text-align: center;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	height: 30px;
+	font-size: 15px;
+}
+
+#submit-guess:hover {
+	color: #ffffff;
+	background-color: blue;
+	border-color: blue;
 }

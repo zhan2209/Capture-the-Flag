@@ -8,13 +8,15 @@ $query = "SELECT * FROM users WHERE username='$username'";
 $result = mysqli_query($connection, $query);
 
 if(mysqli_num_rows($result) !== 0) {
-	echo "<p>Someone has already registered with the username '" . htmlspecialchars($username) . "'</p>";
+	echo "<p>There is already a(n) '" . htmlspecialchars($username) . "' in our database. Try another username.</p>";
 	die("<a href='.'>Go back</a>");
 }
 
 if($username == '') {
-	die("<p>You didn't enter a username... what're you trying to pull?</p>");
+	echo "<p>You didn't enter a username... what're you trying to pull?</p>";
+	die("<a href='.'>Go back</a>");
 } else {
-	die("<p>'$username' is available, but registration is currently disabled.</p>");
+	echo "<p>'$username' is available, but registration is currently disabled.</p>";
+	die("<a href='.'>Go back</a>");
 }
 ?>

@@ -3,10 +3,12 @@
 	if(!isset($_SESSION['wallet'])) {
 		$_SESSION['wallet'] = 50;
 	}
+	
+	//$_SESSION['wallet'] = 499;
 
-	$file_dir = '/var/www/hid/web/lottery/';
-	$file_name = 'flag.txt.asc';
-	$flag_file = $file_dir.$file_name;
+	//$file_dir = '/var/www/hid/web/lottery/';
+	//$file_name = 'flag.txt.asc';
+	$flag_file = 'flag.txt.asc';
 
 	$seed = $_COOKIE['TIMESTAMP'];
 	srand($seed);
@@ -43,14 +45,17 @@
 <head><title>Lottery</title>
 <link rel="stylesheet" type="text/css" href="style.css"></head>
 <body>
+<h1>Welcome to Guess-a-Number!</h1>
 <div class='center'>
 	
-	<h3>Earn more than $500 and get a very special prize!</h3>
-	<p>Wallet: $<?php echo $_SESSION['wallet']; ?></p>
+	<h3>Earn over $500 to win a very special prize!</h3>
+	<p id='wallet'>Wallet: $<?php echo $_SESSION['wallet']; ?></p>
 	<form method='post' onsubmit="timer()">
-		<label for='guess'>Guess a number between 0-1000:</label>
-		<input type='text' id='guess' name='guess'>
-		<input type='submit' id='submit-guess' value='Submit Guess'>
+		<div class='guess-line'>
+			<label for='guess'>Guess a number between 0-1000:</label>
+			<input type='text' id='guess' name='guess'>
+			<input type='submit' id='submit-guess' value='Submit Guess'>
+		</div>
 		<div class='bet-btns'>
 			<input type='radio' name='bet' value='5'> $5
 			<input type='radio' name='bet' value='20'> $20
