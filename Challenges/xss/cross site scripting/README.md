@@ -29,17 +29,17 @@
 			
 					<label>Site Name <input type="text" placeholder="Name of site" maxsize="10" class="form-control" pattern="[A-Za-z]+" required="" name="name"> </label>
 				
-			Delete the pattern format, then you can inject some script into the input area. but it still doesn't work. :(
+				Delete the pattern format, then you can inject some script into the input area. but it still doesn't work. :(
 			2. check the javascript code, you will find all the input script will be replaced:
 			
 					var siteName = $(".ex1 input[type='text']").val().trim().replace(/</g, "&lt;").replace(/>/g, "&gt;");
 					var siteURL = $(".ex1 input[type='url']").val().trim().replace(/</g, "&lt;").replace(/>/g, "&gt;");
 				
-			then you can change the siteName to :
+				then you can change the siteName to :
 			
 					var siteName = $(".ex1 input[type='text']").val().trim(); 
 			
-			then it won't replace anything of your input.
+				then it won't replace anything of your input.
 					
 			3. check the js code, you will find that the defult input should be a script alert() with content "flag" then input :
 						
