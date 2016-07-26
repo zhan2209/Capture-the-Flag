@@ -19,32 +19,33 @@ and check the ex1.js will find the flag will show at the same place:
 
 ## Write up
 
-First this website allow user to add their favorite link. and only the legal name and URL could be added.There are two ways to solve this problem:
-1st method:
-	Make the function levelCompleted() work, such as change if(condition) to if(!condition) 
+First this website allow user to add their favorite link. and only the legal name and URL could be added.There are two ways to solve this problem:<br>
+1st method:<br>
+
+1. Make the function levelCompleted() work, such as change if(condition) to if(!condition) 
 	
 2nd method:
 1. check the html code, you will find for the site name and site URL are all patterned:
 			
-	<label>Site Name <input type="text" placeholder="Name of site" maxsize="10" class="form-control" pattern="[A-Za-z]+" required="" name="name"> </label>
+		<label>Site Name \<input type="text" placeholder="Name of site" maxsize="10" class="form-control" pattern="[A-Za-z]+" required="" name="name"> \</label>
 				
-Delete the pattern format, then you can inject some script into the input area. but it still doesn't work. :(
+	Delete the pattern format, then you can inject some script into the input area. but it still doesn't work. :(
 2. check the javascript code, you will find all the input script will be replaced:
 				
-	var siteName = $(".ex1 input[type='text']").val().trim().replace(/</g, "&lt;").replace(/>/g, "&gt;");
-	var siteURL = $(".ex1 input[type='url']").val().trim().replace(/</g, "&lt;").replace(/>/g, "&gt;");
+		var siteName = $(".ex1 input[type='text']").val().trim().replace(/\<\/g, \"\&lt\;\").replace(/>/g, "\&gt;");<br>
+		var siteURL = $(".ex1 input[type='url']").val().trim().replace(/\<\/g, \"\&lt\;\").replace(/>/g, "\&gt;");
 				
-then you can change the siteName to :
+	then you can change the siteName to :
 			
-	var siteName = $(".ex1 input[type='text']").val().trim(); 
+		var siteName = $(".ex1 input[type='text']").val().trim(); 
 			
-then it won't replace anything of your input.
+	then it won't replace anything of your input.
 					
-3. check the js code, you will find that the defult input should be a script alert() with content "flag" then input :
+3. check the js code, you will find that the defult input should be a script alert() with content "flag" then input:
 						
-	<script>alert("flag");</script>
+		<script>alert("flag");</script>
 				
-it will show the flag in the hints area. :)
+	it will show the flag in the hints area. :)
 
 ## Flag
  
