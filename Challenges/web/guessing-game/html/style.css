@@ -1,0 +1,127 @@
+html, body {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	height: 100%;
+	width: 100%;
+}
+
+html {
+	background-color: #f0f0f0;
+}
+
+h1 {
+	font-family: Arial;
+}
+
+#sidebar {
+	position: relative;
+	float: left;
+	width: 10%;
+	height: 100%;
+	background-color: #88cc00;
+	text-align: center;
+}
+
+#sidebar span {
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 15px;
+	right: 0;
+	margin-right: 15px;
+
+}
+
+#prev-guesses {
+	font-family: Arial;
+	position: relative;
+	clear: left;
+	margin: auto;
+	border: 1px solid black;
+	border-radius: 2px;
+	margin-left: 15px;
+	margin-top: 25px;
+	width: 25%;
+}
+
+#prev-guesses p {
+	margin-left: 10px;
+}
+
+.guess {
+	color: red;
+	margin-left: 10px;
+}
+
+#desc {
+	font-size: 18px;
+	font-family: Helvetica;
+}
+
+.container {
+	clear: right;
+	margin-left: 250px;
+	overflow: hidden;
+}
+
+#popup {
+	position: absolute;
+	clear: left;
+	bottom: 0;
+	margin-bottom: 20px;
+	padding-right: 40px;
+	display: none;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: #919191;
+	color: white;
+}
+
+#popup xmp {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.outcome {
+	font-family: Helvetica;
+	font-size: 16px;
+	margin-left: 10px;
+	margin-top: 25px;
+}
+
+#source {
+	color: blue;
+	bottom: 0;
+}
+
+#hinttext {
+	color: #88cc00;
+	margin-left: 10px;
+	padding: 5px;
+	font-size: 14px;
+	font-family: sans-serif;
+	border: 1px #88cc00 solid;
+	background-color: #88cc00;
+}
+
+#hint {
+	margin-left: 100px;
+	color: black;
+}
+
+#form {
+	display: inline-block;
+}
+
+#form input {
+	margin-left: 10px;
+}
+
+#form input[type='submit'] {
+	background-color: #88cc00;
+	border: 1px solid #88cc00;
+	color: white;
+	padding: 5px 10px;
+}
+
+#form input[type='text'] {
+	padding: 4px;
+}
