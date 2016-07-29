@@ -19,6 +19,12 @@ set vagrant_path="C:\Users\%usr%\.vagrant.d\boxes"
 set p=%CD%
 set box=%1%
 
+if exist %p%\.vagrant (
+	echo "[-] Deleting old VM files..."
+	vagrant destroy -f
+	rd /s /q "%p%\.vagrant"
+)
+
 :: delete old boxes so we don't run into naming/saving issues through vagrant
 if exist %vagrant_path%\%box% (
 	echo "[-] Removing old %box% files..."

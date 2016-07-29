@@ -3,12 +3,11 @@
 	if(!isset($_SESSION['wallet'])) {
 		$_SESSION['wallet'] = 50;
 	}
+	if(!isset($_SESSION['won'])) {
+		$_SESSION['won'] = false;
+	}
 	
-	//$_SESSION['wallet'] = 499;
-
-	//$file_dir = '/var/www/hid/web/lottery/';
-	//$file_name = 'flag.txt.asc';
-	$flag_file = 'flag.txt.asc';
+	$_SESSION['wallet'] = 400;
 
 	$seed = $_COOKIE['TIMESTAMP'];
 	srand($seed);
@@ -36,8 +35,11 @@
 			}
 		}
 		if($_SESSION['wallet'] >= 500) { // overwrite message if they win
-			$message = "<p>You probably just got lucky... Click <a href='./$flag_file' download>here</a> for the flag.</p>";
-		} 
+			$_SESSION['won'] = true;
+			$message = "<p>You probably just got lucky... Click <a href='./download.php' download>here</a> for the flag.</p>";
+		} else {
+			$_SESSION['won'] = false;
+		}
 		echo "</div>";
 	}
 ?>
@@ -57,9 +59,9 @@
 			<input type='submit' id='submit-guess' value='Submit Guess'>
 		</div>
 		<div class='bet-btns'>
-			<input type='radio' name='bet' value='5'> $5
-			<input type='radio' name='bet' value='20'> $20
-			<input type='radio' name='bet' value='100'> $100
+			<input type='radio' name='bet' value='5'><label for='bet'>$5</label>
+			<input type='radio' name='bet' value='20'><label for='bet'>$20</label>
+			<input type='radio' name='bet' value='100'><label for='bet'>$100</label>
 		</div><br>
 		<?php 	if($_POST['guess'] != '') echo "<p>You guessed: ".$_POST['guess']." | Correct value: ".$randval."</p>";
 				if(isset($message)) echo $message; ?>

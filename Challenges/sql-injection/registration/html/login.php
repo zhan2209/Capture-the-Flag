@@ -10,7 +10,7 @@ $result = mysqli_query($connection, $query);
 
 if (mysqli_num_rows($result) === 1) {
 	$row = mysqli_fetch_array($result);
-	$FLAG = file_get_contents('flag.txt');
+	$FLAG = file_get_contents("/var/www/hid/sql-injection/registration/flag.txt");
 	echo "<h1>Logged in!</h1>";
 	echo "<p>Your flag is: $FLAG</p>";
 } else {

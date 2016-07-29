@@ -18,8 +18,8 @@
 	</form>	
 	</div>
 	<?php
-		$src = file_get_contents('source.txt');
-		$file = '../hid/secret-password.txt';
+		$src = file_get_contents("./source.txt");
+		$file = "/var/www/hid/web/guessing-game/secret-password.txt";
 		$guesses_file = "./guesses.json";
 		$guesses_json = json_decode(file_get_contents($guesses_file), true);
 		extract($_GET);
@@ -27,7 +27,7 @@
 			$password = trim(file_get_contents($file));
 			if($attempt === $password) {
 				echo "<p class='outcome'>How did you figure out the secret password?!</p>";
-				$flag = trim(file_get_contents('../hid/flag.txt'));
+				$flag = trim(file_get_contents("/var/www/hid/web/guessing-game/flag.txt"));
 				echo "<p class='outcome'>The flag is <b>$flag</b></p>";
 			} else {
 				echo "<p class='outcome'><b>Nope!</b> The secret password is not $attempt...</p>";
