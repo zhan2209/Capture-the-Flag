@@ -6,8 +6,6 @@
 	if(!isset($_SESSION['won'])) {
 		$_SESSION['won'] = false;
 	}
-	
-	$_SESSION['wallet'] = 400;
 
 	$seed = $_COOKIE['TIMESTAMP'];
 	srand($seed);
