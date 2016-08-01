@@ -1,0 +1,12 @@
+Questions description:
+
+	It seems that someone hide a very important information use gmail.
+
+	The account address is ctf.infcampus@gmail.com
+
+	Could you try to find the password to get the secrect? 
+
+Hints:
+
+	The owner is a lazy person, he always use the password from a common password list, such as openwall :] 
+
