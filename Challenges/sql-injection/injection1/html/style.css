@@ -1,63 +1,164 @@
-.form-group {
-	background-color: #ffffff;
-	color: #000000;
-	border: 2px #ffffff solid;
-	font-size: 25px;
+html {
+	background: url('purty_wood.png');
+	font-size: 10pt;
 }
 
-#username {
-	font-size: 25px;
+body {
+  position: relative;
 }
 
-#password {
-	font-size: 25px;
+.intro {
+  position: relative;
+  text-align: center;
 }
 
-#reg_username {
-	font-size: 25px;
+.intro h1 {
+  font-size: 50px;
+  color: #181818;
+  margin-bottom: -5px;
 }
 
-#reg_password {
-	font-size: 25px;
+.intro h3 {
+  font-size: 30px;
+  color: #181818;
 }
 
-#login-box {
-	margin: auto;
-	margin-top: 2%;
-	width: 50%;
-	height: 50%;
-	padding: 25px 25px 25px 25px;
-	border: 5px #000000 solid;
-	text-align: center;
+.intro p {
+  display: inline-block;
+  font-size: 18px;
+  font-family: Helvetica;
+  margin-top: -5px;
+  margin-bottom: 30px;
 }
 
-#register-box {
-	margin: auto;
-	margin-top: 2%;
-	width: 50%;
-	height:50%;
-	padding: 25px 25px 25px 25px;
-	border: 5px #000000 solid;
-	text-align: center;
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 20px 20px;
+  width: 310px;
+  background: white;
+  border: 1px #989 solid;
+  border-radius: 3px;
+  -moz-box-shadow: 3px 3px 3px 3px #767;
+  -webkit-box-shadow: 3px 3px 3px 3px #767;
+  box-shadow: 3px 3px 3px 3px #767;
+  
 }
 
-.form-action {
-	padding-top: 20px;
+.loginform ul {
+	padding: 0;
+	margin: 0;
 }
 
-#login-button {
-	font-size: 20px;
-	border: 1px #000000 solid;
+.loginform li {
+	display: inline;
+	float: left;
 }
 
-#register-button {
-	font-size: 20px;
-	border: 1px #000000 solid;
+label {
+  margin-top: 5px;
+  margin-left: 2px;
+	display: block;
+	color: #999;
 }
 
-h1 {
-	margin: auto;
-	margin-top: 6%;
-	text-align: center;
-	font-size: 40px;
+.cf:before,
+.cf:after {
+	content: "";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+.cf {
+	*zoom: 1;
+}
+
+:focus {
+	outline: 0;
+}
+
+.loginform input:not([type=submit]) {
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 
+        0px 1px 0px 0px rgba(250, 250, 250, 0.5) ;
+}
+
+.loginform input[type=submit] {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: #64c8ef;
+  background: -moz-linear-gradient(top,  #64c8ef 0%, #00a2e2 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#64c8ef), color-stop(100%,#00a2e2)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #64c8ef 0%,#00a2e2 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #64c8ef 0%,#00a2e2 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #64c8ef 0%,#00a2e2 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #64c8ef 0%,#00a2e2 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64c8ef', endColorstr='#00a2e2',GradientType=0 ); /* IE6-9 */
+  color: #fff;
+  padding: 5px 15px;
+  margin-right: 0;
+  margin-top: 21px;
+  border-radius: 3px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.container h1 {
+  margin: -20px -20px 21px;
+  line-height: 40px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #555;
+  border-bottom: 1px solid #cfcfcf;
+  border-radius: 3px 3px 0 0;
+  background-color: #eeeeee;
+}
+
+.pics {
+  text-align: center;
+}
+
+.pics h3 {
+  font-size: 30px;
+  margin-bottom: -30px;
+}
+
+div.img {
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+  margin-left: 50px;
+  display: inline-block;
+  border: 1px solid black;
+  width: 250px;
+}
+
+
+div.img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cont {
+  margin-top: 200px;
+}
+
+.login-box {
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 20px 20px;
+  width: 310px;
+  background: white;
+  border: 1px #989 solid;
+  border-radius: 3px;
+  -moz-box-shadow: 3px 3px 3px 3px #767;
+  -webkit-box-shadow: 3px 3px 3px 3px #767;
+  box-shadow: 3px 3px 3px 3px #767;
 }

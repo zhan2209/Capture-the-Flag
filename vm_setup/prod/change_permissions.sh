@@ -5,6 +5,9 @@
 #
 # Usage: /vagrant/change_permissions.sh
 
+# secure mysql installation
+sudo /vagrant/vm_setup/prod/mysql_secure.sh
+
 # change permissions WORKING!!!!
 sudo chown -R www-data:www-data /var/www
 sudo chmod go-rwx /var/www

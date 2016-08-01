@@ -1,7 +1,8 @@
 <?php
 	include 'db.inc.php';
 	include 'globals.php';
-	// ID is escaped, so this must be safe, right?
+	echo "<link rel='stylesheet' type='text/css' href='style.css'>";
+
 	$id = mysqli_real_escape_string($connection, $_GET["id"]);
 
 	$query = "SELECT * FROM ${table_prefix}users WHERE id=$id";
@@ -12,11 +13,12 @@
 	}
 
 	$row = mysqli_fetch_array($result);
-	echo "<pre>";
-	echo "User info for id #", htmlspecialchars($row["id"]), "\n";
-	echo "Username: ", htmlspecialchars($row["username"]), "\n";
-	echo "Email: ", htmlspecialchars($row["email"]), "\n";
-	echo "Authorization: ", htmlspecialchars($row["authorization"]), "\n";
-	echo "</pre>";
-	echo '<a href=".">Go back</a>';
+	echo "<div class='info-cont'>";
+	echo "<div class='infobox'>";
+	echo "<div id='textline'><p class='left'>User info for id:</p><p class='right'>".htmlspecialchars($row['id'])."</p></div>";
+	echo "<div id='textline'><p class='left'>Username:</p><p class='right'>".htmlspecialchars($row['username'])."</p></div>";
+	echo "<div id='textline'><p class='left'>Email:</p><p class='right'>".htmlspecialchars($row['email'])."</p></div>";
+	echo "<div id='textline'><p class='left'>Authrorization:</p><p class='right'>".htmlspecialchars($row['authorization'])."</p></div>";
+	echo "<a id='back' class='link' href='.'>Go back</a>";
+	echo "</div></div>";
 ?>
