@@ -5,6 +5,9 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<div class="main-header">
+		<h1>Welcome! Login or register below.</h1>
+	</div>
 	<div class="container">
 		<div class="row">
 			<div class="panel-heading">
