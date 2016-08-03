@@ -1,5 +1,5 @@
 # Description
-
+For the people who can not see, what if they want to read? Remember to format the flag as: flag{foo_foo}
 
 ## Hints
 

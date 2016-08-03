@@ -1,38 +1,22 @@
-﻿They need to calculate the frequency of all the numbers, 
+﻿# Description
+
+Can you understand what this story talks about? Remember to format the flag as: flag{foo_foo}
+
+## Hints:
+
+Once you get the flag, please use the format "flag{ }" and please use underscore between words.
+
+
+## Write up
+They need to calculate the frequency of all the numbers, 
 and change all the numbers into corresponding english letters.
-
-a 16
-b 6 
-c 7 
-d 8
-e 12
-f 18
-g 1 
-h 14
-i 19
-j 4
-k 23
-l 20
-m 11
-n 26
-o 24
-p 15 
-q 3
-r 17
-s 13
-t 5
-u 2 
-v 9
-w 22 
-x --
-y 10
-z --
-
-Flag is in the story.
-
-
-==================================The full story=====================================
-
+````
+a 16    b 6     c 7      d 8     e 12    f 18     g 1      h 14    i 19   
+j 4     k 23    l 20     m 11    n 26    o 24     p 15     q 3     r 17    
+s 13    t 5     u 2      v 9     w 22    x --     y 10     z --
+````
+Flag is in the story. The full story:
+````
 This short story Advising A Fool is quite interesting to all people. Enjoy reading this short story. 
 
 On a mango tree in a jungle, there lived many birds. They were happy in their small nests. 
@@ -62,3 +46,8 @@ What will the monkey say? The monkey said, "the flag is English words".
 tore it and threw it on the ground. The bird and her chicks were helpless. 
 
 The poor bird thought, “Fools never value good advice. It is better not to advise them." 
+````
+
+## The flag
+
+flag {English_words}
