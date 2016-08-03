@@ -10,7 +10,7 @@ Try the openwall common password list ;) Good luck!
 
 ## The flag
 
-The flag is{ the more complex the safer}.
+Flag { the more complex the safer}.
 
 ## The answer
 The gmail account is :ctf.infcampus@gmail.com

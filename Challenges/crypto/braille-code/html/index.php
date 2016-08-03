@@ -5,13 +5,15 @@ header("Hints: Braille Language");
 ?>
 
 <HTML>
-<body>
-<h1> Q: Why don't blind people skydive? </h1>
-	<a href = "JavaScript:newPopup('/doc/flag.txt');">
-		<img src= "/img/for_blind.jpg"; >
-	</a>
-	<p>
-		<a href="JavaScript:newPopup('/doc/Answer.txt');">
+<body style ="background-color : Aquamarine ">
+<h1 style = "text-align: center"> Q: Why don't blind people skydive? </h1>
+	<div style = "text-align: center">
+		<a href = "JavaScript:newPopup('./doc/flag.txt');">
+			<img  src= "./img/for_blind.jpg"; >
+		</a>
+	</div>
+	<p style = "text-align: center" >
+		<a href="JavaScript:newPopup('./doc/Answer.txt');">
 			Click here find Answer
 		</a>
 	</p>
