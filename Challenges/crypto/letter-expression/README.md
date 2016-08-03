@@ -1,4 +1,4 @@
-﻿#  Description
+﻿# Description
 
 Can you understand what this story talks about? Remember to format the flag as: flag{foo_foo}
 
