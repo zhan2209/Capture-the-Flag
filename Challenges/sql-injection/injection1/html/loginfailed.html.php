@@ -1,18 +1,13 @@
 <!doctype html>
 <html>
-  <head><title>Login Failed</title></head>
+  <head><title>Login Failed</title>
+  <link rel='stylesheet' type='text/css' href='style.css'></head>
   <body>
-    <h1>Login failed.</h1>
-	<?php
-	  session_start();
-	  if($_SESSION['debug'] == 1) {
-	    echo "<pre>";
-	    echo 'username: '.$_SESSION['thisuser'], "\n";
-	    echo 'password: '.$_SESSION['thispass'], "\n";
-	    echo 'query: '.$_SESSION['thisquer'], "\n";
-	    echo "</pre>";
-	  }
-	?>
-	<a href='.'>Go back</a>
+  	<div class='cont'>
+  		<div class='login-box'>
+		    <h1>Login failed.</h1>
+			<a href='.'>Go back</a>
+		</div>
+	</div>
   </body>
 </html>

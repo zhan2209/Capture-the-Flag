@@ -14,7 +14,7 @@
 		&& isset($_SESSION['open_cookie_value'])
 		&& $_COOKIE[$_SESSION['cookie_name']] == $_SESSION['open_cookie_value'])
 	{
-		$filename = "../hid/flag.txt";
+		$filename = "/var/www/hid/xss/xss-alert/flag.txt";
 		$handle = fopen($filename, "r");
 		$contents = fread($handle, filesize($filename));
 		echo "
