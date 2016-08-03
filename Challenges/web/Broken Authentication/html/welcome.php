@@ -88,7 +88,7 @@
 						</table>";
 					echo "<div style='text-align:center;'>
 							<h3>
-								Flag {broken_authentication}
+								Flag{broken_authentication}
 							</h3>
 						</div>";
 				}

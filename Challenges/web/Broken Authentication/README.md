@@ -3,7 +3,11 @@
 ## Description
 
 This is a cookie attack. Find and change the cookies vulnerability to set the admin's session ID.
-Once you have their session ID and visit permit, log in as admin and capture the flag.
+Once you have their session ID and visit permit, log in as admin and capture the flag. Remember to format the flag as: flag{foo_foo}
+
+## Hints:
+
+Once you get the flag, please use the format "flag{ }" and please use underscore between words.
 
 ## Write-Up
 
@@ -15,4 +19,4 @@ You will need to change the user to Cherry Arden and the welcome value to yes, t
 
 ## The flag
 
-Flg {broken_authentication}
+Flag{broken_authentication}
