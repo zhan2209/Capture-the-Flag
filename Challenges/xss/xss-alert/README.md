@@ -24,4 +24,4 @@ Since the read.php has the same section with the load.php page, whose section wi
 
 ## Flag:
 
-* Flag is frame media onerror events.
+* Flag{frame_media_onerror_events}.

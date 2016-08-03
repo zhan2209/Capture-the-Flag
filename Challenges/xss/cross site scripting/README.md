@@ -49,4 +49,4 @@ First this website allow user to add their favorite link. and only the legal nam
 
 ## Flag
  
-The flag is untrust data xss
+flag{untrust_data_xss}

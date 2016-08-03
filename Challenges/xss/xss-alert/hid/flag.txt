@@ -1,1 +1,1 @@
-Flag is frame media onerror events.
+flag{frame_media_onerror_events}
