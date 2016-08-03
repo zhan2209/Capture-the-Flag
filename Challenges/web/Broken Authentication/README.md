@@ -15,4 +15,4 @@ You will need to change the user to Cherry Arden and the welcome value to yes, t
 
 ## The flag
 
-The flag is broken authentication
+Flg {broken_authentication}

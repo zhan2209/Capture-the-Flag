@@ -5,7 +5,7 @@
 	$cookie_value = '44656c6963696f757320436f6f6b696573';//deliciouscookies
 	$cookie_name = 'User';
 	$Delicious_cookie_name = 'Delicious';
-	$flag ='27666c61672069732064656c6963696f757320636f6f6b69657327';//flagis.....
+	$flag ='666c61677b64656c6963696f75735f636f6f6b69657d';//flag.....
 	
 	if (isset($_COOKIE[$cookie_name])) {
 		$cookie_value = $_COOKIE[$cookie_name];
