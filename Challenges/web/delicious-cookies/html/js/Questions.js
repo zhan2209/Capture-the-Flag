@@ -17,7 +17,7 @@ function getCookie(cname) {
 function checkCookie() {
     var user=getCookie("username");
     if (user != "") {
-		if(user == "Cookie" ){
+		if(user == "Delicious" ){
 			alert("Welcome again " + user+ ".  Check pages! You will get flag soon !");}
 	else{
 		alert("Welcome again " + user);}

@@ -29,13 +29,8 @@ function checkCookie() {
 ````
 You will get the <b>hints</b>: cookie must be Delicious. Which indicate that you must change the cookie to delicious.
 
-Back to your cookie change the cookie user to 'Delicious' and refresh the webpage
+and you need to change <b>All the cookies values</b> to <i> Delicious</i>and refresh the webpage
 you will get the flag.
-
-````
-666c61677b64656c6963696f75735f636f6f6b69657d
-````
-Which is Hex code, then decode it you will get the ASCII text of the flag.
 
 
 ## The flag
