@@ -8,7 +8,7 @@ function setInnerText(element, value) {
   }
 }
 
-function levelSolved() {
+ function levelSolved() {
   if (!userOpenedAlert) {
     return;
   }
@@ -57,12 +57,14 @@ function updateFrame(frameNum, url) {
 };
 
 function ShowNext() {
+	window.location.reload();
       $.ajax({
            type: "POST",
            url: './php/load.php',
            data:{action:'call_this'},
            success:function(html) {
-             load(load.php);
+            load(load.php);
+			 return true;
            }
       });
  }

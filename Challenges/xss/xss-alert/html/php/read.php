@@ -8,15 +8,13 @@
 
 <?php
 	session_start();
-	//echo $_SESSION['open_cookie_value'];
+
 	if (isset($_SESSION['cookie_name'])
 		&& isset($_COOKIE[$_SESSION['cookie_name']]) 
 		&& isset($_SESSION['open_cookie_value'])
 		&& $_COOKIE[$_SESSION['cookie_name']] == $_SESSION['open_cookie_value'])
 	{
-		$filename = "/var/www/hid/xss/xss-alert/flag.txt";
-		$handle = fopen($filename, "r");
-		$contents = fread($handle, filesize($filename));
+		$contents = "flag{frame_media_onerror_events}";
 		echo "
 		<div>
 			<h1 id='level-title'style='color:Red; text-align: center;' >
@@ -25,7 +23,6 @@
 			<h3 style='text-align: center;' > $contents </h3>
 		</div>
 		";
-		fclose($handle);
 	}
 	else{
 		echo "

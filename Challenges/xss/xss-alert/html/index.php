@@ -16,12 +16,12 @@
 		<p>
 			Inject a script to pop up an <code>alert()</code> in the context of the application.  <br><br>
 		<b>Note</b>
-			: the application saves your posts so if you sneak in code to execute the alert, this level will be solved every time you reload it.<br>
+			: the application saves your posts so if you sneak in code to execute the alert.<br>
 			And please use my favourite browser Chrome, Thanks  =)
 		</p>
 		<h2>Your Target</h2>
 		<div id="next-controls" >
-			<a class="next-button" href="./php/read.php" onclick="ShowNext()" > Advance to flag </a>
+			<a class="next-button" onclick="ShowNext()" href="./php/load.php"> Advance to flag </a>
 		</div>
 	</div>
 	<div id="game-frame-container">

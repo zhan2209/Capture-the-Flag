@@ -18,4 +18,6 @@
 	}
 	echo $_SESSION['cookie_name'].'<br>'.$_SESSION['cookie_value'];
 	}
+	
+	header('Location: read.php');
 ?>
