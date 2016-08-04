@@ -6,20 +6,24 @@ The top secret organization protected their pages with a password.
 While we were on their network we monitored the traffic and noticed they didn't always use TLS. This allowed us to see the requests listed below.
 Find the admin's password. It is the flag.
 
-
+=================================================================
 	GET http://www.example.com/top-secret HTTP/1.1
 	Host: www.example.com
-	Authorization: Basic amFzb24uYm91cm5lOmlkZW50aXR5MTk4MA==
-	
-	
+	Authorization: Basic
+WVcxR2VtSXlOSFZaYlRreFkyMDFiRTl0Ykd0YVZ6VXdZVmhTTlUxVWF6Uk5RVDA5
+=================================================================
+=================================================================
 	GET http://www.example.com/top-secret HTTP/1.1
 	Host: www.example.com
-	Authorization: Basic YWdlbnQ6Ym9uZDAwNw==
-	
-	
+	Authorization: Basic
+Vm0weGQxSXhiRmhTV0d4VFYwZDRWVmxVU205V1ZteDBaVWRHVjAxV2NIbFdNalZyVjJ4YWRHVkljRmRXZWxaUVZrZDRZV1JHVm5WaVJtUlhUVEZLVFZkV1VrSmxSa3BYVjJ4c2FsSnNjRlJaYTFaYVpXeGFWbGRyV2xCV2EwcFRWVVpSZDFCUlBUMD0=
+=================================================================
+=================================================================
 	GET http://www.example.com/top-secret HTTP/1.1
 	Host: www.example.com
-	Authorization: Basic YWRtaW46VWNAbid0Q3JhY2tUaGlzIUN1ekl0J3NTdXBlckxvb29uZyE=
+	Authorization: Basic
+Vm0wd2VFNUhSWGhWV0doVFlrZG9WVmx0ZEV0aFJsWnlWbXQwVmsxV1NsWlZWelZyWVZVeFdGVnNXbFpOYmtKRVZtcEdXbVF4WkhKaVJuQm9UVzFuZWxaVVNqUlpWbHB5VGxWc2FGSXdXbGhVVkVaTFRteGFSMVpzWkd0aVZscDZWbGMxVDFadFNsbFZiR3hXWWtaYU0xcFhlR3RXVms1eFVXczVVMDFWYjNkV1ZFWnZZekZXUjFwRlpGaGlWMmhvVm0xNFlWWXhVWGhTVkd4UlZWUXdPUT09
+=================================================================
 
 ## Write-Up
 
