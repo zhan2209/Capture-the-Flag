@@ -51,9 +51,8 @@ So the flag is:
 ````
 	row: 4 4 3 1  3 2   3 2 5 3 5 3 2 5 3 2 1   4 3 2 5 3 5
 	col: 1 3 3 2  1 5   1 3 1 5 5 5 5 1 1 3 2   2 1 2 2 5 5
-````
-````
-		f l a g  i s   i n t e r e s t i n g   c i p h e r
+	
+	     f l a g  i s   i n t e r e s t i n g   c i p h e r
 ````
 
 ## The flag
