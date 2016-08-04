@@ -6,6 +6,11 @@
 	if(!isset($_SESSION['won'])) {
 		$_SESSION['won'] = false;
 	}
+	/* just in case you run out... */
+	$_SESSION['reset-chips'] = $_POST['reset-chips'];
+	if($_SESSION['reset-chips'] == 1) {
+		$_SESSION['wallet'] = 50;
+	}
 
 	$seed = $_COOKIE['TIMESTAMP'];
 	srand($seed);
@@ -59,10 +64,14 @@
 		<div class='bet-btns'>
 			<input type='radio' name='bet' value='5'><label for='bet'>$5</label>
 			<input type='radio' name='bet' value='20'><label for='bet'>$20</label>
+			<input type='radio' name='bet' value='50'><label for='bet'>$50</label>
 			<input type='radio' name='bet' value='100'><label for='bet'>$100</label>
+			<input type='radio' name='bet' value='250'><label for='bet'>$250</label>
 		</div><br>
 		<?php 	if($_POST['guess'] != '') echo "<p>You guessed: ".$_POST['guess']." | Correct value: ".$randval."</p>";
 				if(isset($message)) echo $message; ?>
+
+		<input type="hidden" name="reset-chips" value="0">
 	</form>
 </div>
 </body>
