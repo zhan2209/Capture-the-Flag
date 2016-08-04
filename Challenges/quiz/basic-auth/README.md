@@ -24,3 +24,7 @@ Find the admin's password. It is the flag.
 ## Write-Up
 
 The username and password are base64-encoded in each request. Decode the values and submit the admin's password.
+
+## Flag
+
+flag{Uc@n'tCrackThis!CuzIt'sSuperLooong!}

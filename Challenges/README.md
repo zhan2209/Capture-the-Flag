@@ -3,12 +3,16 @@
 ## BROWSER
 ### Hacking
 
+
+
 ## CRYPTO
 ### Braille-Code
 ### Convert
 ### Interesting-Cipher
 ### Letter Expression
 ### Substitution
+
+
 
 ## FORENSICS
 ### Function-Address
@@ -17,22 +21,30 @@
 ### Redacted
 ### Zipper
 
+
+
 ## PASSWORD
 ### Brute-Force
 ### Fast-Hash
 ### Fast-Hash-Complex
 ### Fast-Hash-Salt
 
+
+
 ## QUIZ
 ### Basic-Authorization
 ### Caesar
 ### Campus-Email
+
+
 
 ## SQL-INJECTION
 ### Injection1
 ### Injection2
 ### Injection3
 ### Registration
+
+
 
 ## WEB
 ### Broken-Authentication
@@ -44,6 +56,8 @@
 ### QR-Code
 ### Spoof-Browser
 ### Upload
+
+
 
 ## XSS
 ### Cookie-Stealer

@@ -23,3 +23,8 @@ will reveal an EmailValidator class file. Within this file, you'll see
 	private Pattern localPattern = java.util.regex.Pattern.compile(
 			ATOM + "+(\\." + ATOM + "+)*", CASE_INSENSITIVE
 	);
+	
+	
+## Flag
+
+flag{[a-z0-9!#$%&'+/=?^_{|}~-]+(\\.[a-z0-9!#$%&'*+/=?^_{|}~-]+)}

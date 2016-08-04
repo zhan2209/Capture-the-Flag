@@ -25,4 +25,4 @@ and here is the flag =)
 
 ## The flag
 
-flag {famous last words}.
+flag{famous_last_words}.
