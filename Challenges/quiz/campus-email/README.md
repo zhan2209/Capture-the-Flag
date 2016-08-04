@@ -7,11 +7,10 @@ What is the FULL regular expression used for the local part of an email address 
 ## Hint
 
 Take a look at the external libraries... specifically hibernate-validator
+
 ## Flag
 
-````
-    flag{[a-z0-9!#$%&'*+/=?^_\`{|}~-]+(\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*}
-````
+flag{[a-z0-9!#$%&'*+/=?^_`{|}~-]+(\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*}
 
 ## Write-Up
 
