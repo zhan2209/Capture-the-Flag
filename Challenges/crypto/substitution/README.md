@@ -1,9 +1,20 @@
 # Substitution
 
-Description: Putin has encrypted a file containing his favorite song, along with the flag! Can you crack it? Remember to format the flag as: flag{foo}
-Hint: https://en.wikipedia.org/wiki/Letter_frequency
-Flag: flag{letitgo}
-Category: Intermediate
+## Description
+
+Putin has encrypted a file containing his favorite song, along with the flag! Can you crack it? Remember to format the flag as: flag{foo}
+
+## Hint
+
+ Hints link: https://en.wikipedia.org/wiki/Letter_frequency
+
+ ## Flag
+
+ flag{letitgo}
+
+ ## Category
+
+ Intermediate
 
 ## Write-Up
 
