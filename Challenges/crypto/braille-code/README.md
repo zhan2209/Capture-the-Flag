@@ -18,7 +18,7 @@ Once you get the flag, please use the format "flag{ }" and please use underscore
 ````
 2nd: Check the header, there is a hint: braille language, follow the braille language, you can get the real "points code"
 
-![alt tag](http://localhost/braille-code/result.png)                                 
+![alt tag](result.png)                                 
 
 then translate it to ASCII. 
 
