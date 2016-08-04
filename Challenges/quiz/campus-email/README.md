@@ -1,8 +1,17 @@
 # Campus Email
 
-Description: What is the FULL regular expression used for the local part of an email address (everything before '@') in the campus code?
-Hint: Take a look at the external libraries... specifically hibernate-validator
-Flag: [a-z0-9!#$%&'*+/=?^_`{|}~-]+(\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*
+## Description
+
+What is the FULL regular expression used for the local part of an email address (everything before '@') in the campus code?
+
+## Hint
+
+Take a look at the external libraries... specifically hibernate-validator
+## Flag
+
+````
+    flag{[a-z0-9!#$%&'*+/=?^_\`{|}~-]+(\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*}
+````
 
 ## Write-Up
 
@@ -16,15 +25,9 @@ will reveal an EmailValidator class file. Within this file, you'll see
 	
 	...
 	
-	
 	/**
 	 * Regular expression for the local part of an email address (everything before '@')
 	 */
 	private Pattern localPattern = java.util.regex.Pattern.compile(
 			ATOM + "+(\\." + ATOM + "+)*", CASE_INSENSITIVE
 	);
-	
-	
-## Flag
-
-flag{[a-z0-9!#$%&'+/=?^_{|}~-]+(\\.[a-z0-9!#$%&'*+/=?^_{|}~-]+)}
