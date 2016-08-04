@@ -22,4 +22,4 @@ The flag is Joke picture.
 
 ## The flag
 
-flag {Joke_pic}
+flag {Joke_picture}
