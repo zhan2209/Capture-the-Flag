@@ -24,7 +24,7 @@ if(!isset($_SESSION['first-attempt'])) {
 <div class="center">
 	<div class='content'>
 		<h1>Admin Tools</h1>
-			<?php
+<?php
 
 			function authenticate($your_password) {
 				$password = "jdmnaziwx";
@@ -40,33 +40,30 @@ if(!isset($_SESSION['first-attempt'])) {
 
 					usleep(150000);
 				}
-
 				return(1);
 			}
 
 			$time1 = microtime(true);
-			if($_SESSION['first-attempt']) { // don't tell them they got it wrong yet...
-				echo "	<p>Please identify yourself as the admin by entering your credentials below.</p>
-						<form action='' method='post'>
-							<input type='password' name='your_password' maxlength='9'>
-							<input type='submit' value='Authenticate'>
-						</form>";
+
+			if(isset($_POST["your_password"]) && authenticate($_POST["your_password"])) { 				?>
+				<p>Welcome back admin! We'll authenticate your session.</p>
+<?php			$_SESSION['is_admin'] = true;
+			} else { 																					?>
+				<p>Please identify yourself as the admin by entering your credentials below.</p>
+				<form action='admin.php' method='post'>
+					<input type='password' name='your_password' maxlength='9'>
+					<input type='submit' value='Authenticate'>
+				</form>
+<?php			if(!$_SESSION['first-attempt']) {
+					echo "<p>That's not the password... Are you sure you're the admin?</p>";
+				}
 				$_SESSION['first-attempt'] = false;
-			} else if(isset($_POST["your_password"]) && authenticate($_POST["your_password"])) { // they got the right password!
-				echo "<p>Welcome back admin! We'll authenticate your session.</p>";
-				$_SESSION['is_admin'] = true;
-			} else { // got it wrong
-				echo "	<p>That's not the password... Are you sure you're the admin?</p>
-						<form action='' method='post'>
-							<input type='password' name='your_password' maxlength='9'>
-							<input type='submit' value='Authenticate'>
-						</form>";
 			}
 
 			$time2 = microtime(true);
 			$res = ceil(($time2-$time1) * 1000);
-			?>
-			<br><br>
+																										?>
+			<br>
 			<font size=1><b>Page generated in <?php print("$res ms."); ?> </b> <a href='src.php'>debug</a></font>
 			<br><br><a href='.'>Back</a>
 	</div>
