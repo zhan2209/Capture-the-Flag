@@ -15,7 +15,7 @@ $_SESSION['first-attempt'] = true;
 ?>
 <html>
 <head>
-	<title>Admin Tools</title>
+	<title>Flags-R-Us</title>
 	<link rel="stylesheet" type="text/css" href="app.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
