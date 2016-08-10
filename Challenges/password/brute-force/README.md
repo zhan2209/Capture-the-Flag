@@ -2,7 +2,9 @@
 
 ## Description
 
-The admin tools are password-protected so no one can get in without the password! Figure out the password and log in to capture the flag.
+Flags-R-Us recently deployed their new website, where you can generate an endless supply of flags! However, they're keeping the admin's flag a secret. Find a way to sign in as the admin and get steal his special flag!
+
+Difficulty: Hard
 
 ## Hint
 
