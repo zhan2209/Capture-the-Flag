@@ -16,3 +16,7 @@ In the source code, we can see that it will validate the password character by c
 This allows us to write a script that can loop over every character and the one that takes the longest is likely to be the right one.
 
 See password-timing.py for an example solution.
+
+## Flag
+
+flag{use_the_brute_Force_Luke}

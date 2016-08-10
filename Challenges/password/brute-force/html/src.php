@@ -1,4 +1,8 @@
 <html>
+<head>
+	<title>Debug</title>
+	<link rel="stylesheet" type="text/css" href="app.css">
+</head>
 <pre>
 <code>
 
@@ -13,8 +17,7 @@
 		&lt;h1&gt;Admin Tools&lt;/h1&gt;
 &lt;?php
 	function authenticate($your_password) {
-		// TODO: Change this to a complicated password using alpha characters only. No dictionary words!
-		$password = "campus";
+		$password = "lolololol";
 
 		if (!is_string($your_password) || strlen($your_password) != strlen($password))
 			return(0);
@@ -33,7 +36,7 @@
 
 	$time1 = microtime(true);
 	if (isset($_POST["your_password"]) && authenticate($_POST["your_password"])) { ?&gt;
-		&lt;div class=\"flag\"&gt;Congratulations! The password you used to login is the flag.&lt;/div&gt;
+		&lt;div class=\"flag\"&gt;Congratulations! The flag is ********************************************.&lt;/div&gt;
 &lt;?php } else { ?&gt;
 		&lt;form action="index.php" method="post"&gt;
 			&lt;input type="password" name=your_password maxlength="9"&gt;
@@ -51,5 +54,7 @@
 &lt;/html&gt;
 
 </code>
+
 </pre>
+<a href='admin.php' style='margin-left:15px'>Back</a>
 </html>
