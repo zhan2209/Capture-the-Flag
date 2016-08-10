@@ -1,4 +1,4 @@
-<?php
+	<?php
 	$file = 'secret-password.txt';
 	extract($_GET);
 	if(isset($attempt)) {

@@ -41,6 +41,7 @@ h1 {
 	margin-left: 15px;
 	margin-top: 25px;
 	width: 25%;
+	margin-bottom: 20px;
 }
 
 #prev-guesses p {
@@ -67,13 +68,17 @@ h1 {
 	position: absolute;
 	clear: left;
 	bottom: 0;
-	margin-bottom: 20px;
+	margin-left: -50px;
+	margin-bottom: 50px;
 	padding-right: 40px;
 	display: none;
 	border: 1px solid black;
 	border-radius: 5px;
 	background-color: #919191;
 	color: white;
+	-moz-box-shadow: 3px 3px 3px 3px #444;
+  	-webkit-box-shadow: 3px 3px 3px 3px #444;
+  	box-shadow: 3px 3px 3px 3px #444;
 }
 
 #popup xmp {
@@ -88,23 +93,33 @@ h1 {
 }
 
 #source {
-	color: blue;
 	bottom: 0;
+	cursor: help;
+	color: #0000ff;
+}
+
+#source:hover {
+	color: #16a2ff;
 }
 
 #hinttext {
-	color: #88cc00;
+	color: black;
 	margin-left: 10px;
 	padding: 5px;
 	font-size: 14px;
 	font-family: sans-serif;
-	border: 1px #88cc00 solid;
-	background-color: #88cc00;
+	display: none;
 }
 
 #hint {
-	margin-left: 100px;
+	margin-left: 15px;
 	color: black;
+	cursor: pointer;
+	color: #0000ff;
+}
+
+#hint:hover {
+	color: #16a2ff;
 }
 
 #form {
