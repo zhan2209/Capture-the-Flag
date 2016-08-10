@@ -9,7 +9,7 @@
       window.onload = function() { setInputFieldReturnHandler(); }
     </script>
   </head>
-<body style=" background-color: darkblue; ">
+<body style=" background-color: rgb(129, 146, 150); ">
     <h1 id="level-title"> Persistence is key</h1>
     <div id="instructions">
 		<h2>Mission Objective</h2>
@@ -25,8 +25,6 @@
 		</div>
 	</div>
 	<div id="game-frame-container">
-		<div id="topbar">
-		</div>
 		<iframe class="game-frame" src="./xss_files/frame.html">
 		</iframe>
 	</div>

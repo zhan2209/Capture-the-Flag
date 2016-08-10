@@ -29,8 +29,11 @@
 
 <?php endif; ?>
 		<body onload="checkCookie()">
-		<h2>Food is always delicious, isn't it?</h2>
-		<img src="./images/cookie.jpg" alt="Cookie Monster">
+		<h2>Cookie is always delicious, isn't it?</h2>
+		<div>
+			<img src="./images/cookie.jpg" alt="Cookie Monster" width="40%" height="700">
+			<img src="./images/Monster.jpg" alt="Cookie Monster" width="40%" height="700">
+		</div>
 		<script src="./js/Questions.js"></script>
 		<!-- <script src="backup.js"> -->
 </body>

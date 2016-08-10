@@ -1,355 +1,150 @@
 <!DOCTYPE html>
 <html>
+	<body style="background-image: url('cloud.jpg'); background-repeat:no-repeat; background-size:cover; width:100%;height:100%;" >
+		<div style = "text-align: center; color: white; font-family:Algerian">
+		
+			<h1>Quick Question:</h1>
 
-<p>
+			<p>What's your favourite food?</p>
 
+			<input id="numb">
 
+			<button type="button" onclick="myFunction()" style = "border-radius: 10px; color:white; background-color:rgb(52,100,151)">Submit</button>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-
+			<p id="demo"></p>
+		</div>
+		</body>
 </html>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <html>
-	<body>
-
-		<h1>Quick Question:</h1>
-
-		<p>What's your favourite food?</p>
-
-		<input id="numb">
-
-		<button type="button" onclick="myFunction()">Submit</button>
-
-		<p id="demo">
+<body>
+	<script>
+		function myFunction() {
+		var p, text;
+		var text = 'ZmxhZ3tzY3JpcHRfZnVuY3Rpb25faW5fSFRNTH0=';
+		p = document.getElementById("numb").value;
+		if (isNaN(p) || p < 1 || p > 10000000) {
+			text = "Input not valid";
+		} else {
+			text = "Input OK";
+		}
+		document.getElementById("demo").innerHTML = text;	
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		</p>
-
-			<script>
-				function myFunction() {
-				var p, text;
-				var text = 'ZmxhZ3tzY3JpcHRfZnVuY3Rpb25faW5fSFRNTH0=';
-				p = document.getElementById("numb").value;
-				if (isNaN(p) || p < 1 || p > 10000000) {
-					text = "Input not valid";
-				} else {
-					text = "Input OK";
-				}
-				document.getElementById("demo").innerHTML = text;	
-				
-				}
-			</script>
-	</body>
+		}
+	</script>
+</body>
 </html>
