@@ -50,6 +50,10 @@ body {
 	margin-right: 10px;
 }
 
+#pass:focus {
+	outline: none;
+}
+
 #sub {
 	background-color: #5b0000;
 	color: #E0FFFF;

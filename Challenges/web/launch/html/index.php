@@ -25,7 +25,7 @@
 			<input type="submit" id="sub" value="Login">
 		</form>
 		<?php
-			if($_SESSION['flag'] == "flag{never_know_what_hit_em}") {
+			if($_SESSION['flag'] != "flag{}") {
 				echo "<p id='valid'>Password correct! Cancellation code: ".$_SESSION['flag']."</p>";
 			} else {
 				echo "<p id='valid'></p>";
