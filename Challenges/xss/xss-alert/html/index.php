@@ -9,7 +9,8 @@
       window.onload = function() { setInputFieldReturnHandler(); }
     </script>
   </head>
-<body style=" background-color: rgb(129, 146, 150); ">
+<body style="background-image: url('./xss_files/background.jpg'); 
+			background-repeat:no-repeat; background-size:cover;">
     <h1 id="level-title"> Persistence is key</h1>
     <div id="instructions">
 		<h2>Mission Objective</h2>
