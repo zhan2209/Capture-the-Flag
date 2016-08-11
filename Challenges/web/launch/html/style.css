@@ -1,0 +1,64 @@
+body {
+	background-image: url('starcraft.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-color: #000000;
+}
+
+#head {
+	color: #E0FFFF;
+	font-family: serif;
+}
+
+#instr {
+	color: #E0FFFF;
+	font-family: sans-serif;
+}
+
+.container {
+	position: absolute;
+	border: 5px #8b0000 solid;
+	border-radius: 6px;
+	background: rgba(5, 5, 5, .5);
+	width: 33%;
+	height: 25%;
+	left: 50%;
+	top: 40%;
+	transform: translate(-50%, -50%);
+}
+
+.container:before {
+	content: '';
+	position: absolute;
+	background: rgba(5, 5, 5, .5);
+	z-index: -1;
+	top: -10px;
+	bottom: -10px;
+	left: -10px;
+	right: -10px;
+	border: 3px #bbbbbb solid;
+	border-radius: 6px;
+}
+
+#pass {
+	background: rgba(50, 50, 50, .5);
+	color: #E0FFFF;
+	border: 2px #000000 solid;
+	border-radius: 20px;
+	padding: 5px 10px;
+	font-size: 16px;
+	margin-right: 10px;
+}
+
+#sub {
+	background-color: #5b0000;
+	color: #E0FFFF;
+	border: 2px #5b0000 solid;
+	font-size: 16px;
+}
+
+#valid {
+	color: #E0FFFF;
+	font-family: monospace, serif;
+	font-size: 20px;
+}
