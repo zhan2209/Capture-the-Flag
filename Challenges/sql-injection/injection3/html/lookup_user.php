@@ -18,7 +18,7 @@
 	echo "<div id='textline'><p class='left'>User info for id:</p><p class='right'>".htmlspecialchars($row['id'])."</p></div>";
 	echo "<div id='textline'><p class='left'>Username:</p><p class='right'>".htmlspecialchars($row['username'])."</p></div>";
 	echo "<div id='textline'><p class='left'>Email:</p><p class='right'>".htmlspecialchars($row['email'])."</p></div>";
-	echo "<div id='textline'><p class='left'>Authrorization:</p><p class='right'>".htmlspecialchars($row['authorization'])."</p></div>";
+	echo "<div id='textline'><p class='left'>Authorization:</p><p class='right'>".htmlspecialchars($row['authorization'])."</p></div>";
 	echo "<a id='back' class='link' href='.'>Go back</a>";
 	echo "</div></div>";
 ?>
