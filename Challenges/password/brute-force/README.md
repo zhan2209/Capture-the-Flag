@@ -1,4 +1,4 @@
-# Passsword Timing Attack
+# Password Timing Attack
 
 ## Description
 
