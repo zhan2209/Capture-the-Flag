@@ -17,16 +17,22 @@
 	$randval = rand(0, 1000);
 	
 	if($_POST) {
+		$valid = true;
 		echo "<div class='output'>";
 		if($_POST['bet'] > $_SESSION['wallet']) {
+			$valid = false;
 			$message = "<p>You don't have enough money to make that bet!</p>";
 		} else if($_POST['guess'] < 0 || $_POST['guess'] > 1000) {
+			$valid = false;
 			$message = "<p>Your guess must be between 0 and 1000.</p>";			
 		} else if($_POST['bet'] == '') {
+			$valid = false;
 			$message = "<p>You think this is a charity? Make a bet!</p>";
 		} else if($_POST['guess'] == '') {
+			$valid = false;
 			$message = "<p>You'll need to make a guess. Not that it'll be right...</p>";
 		} else if(!ctype_digit($_POST['guess'])) {
+			$valid = false;
 			$message = "<p>Hey wise guy, integers only.</p>";
 		} else {
 			if($_POST['guess'] == $randval) {
@@ -68,9 +74,9 @@
 			<input type='radio' name='bet' value='100'><label for='bet'>$100</label>
 			<input type='radio' name='bet' value='250'><label for='bet'>$250</label>
 		</div><br>
-		<?php 	if($_POST['guess'] != '') echo "<p>You guessed: ".$_POST['guess']." | Correct value: ".$randval."</p>";
+		<?php 	if($_POST['guess'] != '' && $valid) echo "<p>You guessed: ".$_POST['guess']." | Correct value: ".$randval."</p>";
 				if(isset($message)) echo $message; ?>
-
+		<!-- for testing only! malicious users get outta here -->
 		<input type="hidden" name="reset-chips" value="0">
 	</form>
 </div>
