@@ -1,15 +1,39 @@
+html {
+	background-color: #fafafa;
+	background-image: url('football.jpg');
+	background-size: cover;
+}
+
 .flag {
-	border-left: 5px solid #ffff00;
-	background-color: #ffffe6;
+	border-left: 5px solid #eeeeee;
+	background-color: rgba(255, 255, 255, 0.6);
 	padding: 10px;
 	margin: 10px;
+	margin-top: 0px;
 }
-.hint {
-	border-left: 5px solid #0066ff;
-	background-color: #e6f0ff;
-	padding: 10px;
-	margin: 10px;
+
+.trans-box {
+	background-color: rgba(255, 255, 255, 0.6);
+	padding-left: 15px;
+	padding-right: 15px;
+	display: inline-block;
+	margin-bottom: 15px;
+	border-radius: 5px;
 }
+
+.trans-box .header {
+	border-bottom: 2px solid #eeeeee;
+}
+
+.content p {
+	font-size: 18px;
+	color: black;
+}
+
+.posted {
+	margin-bottom: 100px;
+}
+
 .center {
     margin: auto;
     width: 65%;
@@ -18,8 +42,49 @@
 }
 
 .comment {
-	border-left: 5px solid #0066ff;
-	background-color: #e6f0ff;
-	padding: 10px;
+	font-size: 14px;
+	border-left: 5px solid #eeeeee;
+	background-color: rgba(255, 255, 255, 0.6);
+	padding-top: 1px;
+	padding-left: 10px;
+	padding-bottom: 2px;
 	margin: 10px;
+}
+
+.content {
+	padding-left: 5px;
+	border-left: 2px solid #eeeeee;
+}
+
+#comment-box textarea {
+	font-size: 14px;
+	width: 100%;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+.header h1 {
+	font-size: 40px;
+	color: black;
+	text-align: center
+}
+
+.header img {
+	height: 75px;
+	padding-right: 25px;
+	vertical-align: middle;
+}
+
+#disclaimer {
+	font-size: 10px;
+	text-align: center;
+	margin-top: -15px;
+}
+
+#btn {
+	background-color: #ffffff;
+	border-color: #ffffff;
+	border-radius: 2px;
+	font-family: Arial;
+	font-weight: bold;
 }

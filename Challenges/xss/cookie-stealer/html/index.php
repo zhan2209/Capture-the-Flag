@@ -6,7 +6,6 @@
 	$comments_file_name = "./comments.json";
 	$comments_json = json_decode(file_get_contents($comments_file_name), true);
 	
-	//TODO: Update to PHP 7 and use a session cookie with specific name and path.
 	// This cookie name must match the cookie name in xss-bot.js.
 	$cookie_name = "XSS_COOKIE_STEALER_SESSION_ID";
 	$cookie_value = "";
@@ -25,42 +24,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lorem Ipsum Blog</title>
+	<title>Super Football Blog</title>
 	<link rel="stylesheet" type="text/css" href="app.css">
 </head>
 <body>
-	<div class="center">
-<?php if (isAdmin()): ?>
-		<h1>Welcome Admin</h1>
+<div class="center">
+	<div class='posted'>
+		<?php if (isAdmin()): ?>
+		<div class='trans-box'>
+			<div class='header'>
+				<h1><img src='madden.png'>Welcome Admin</h1>
+			</div>
+		</div>
 		<div class="flag">Congratulations! The flag is <?= $flag ?>.</div>
-<?php else: ?>
-		<h1>Welcome Anonymous</h1>
-<?php endif; ?>
+		<?php else: ?>
+		<div class='trans-box'>
+			<div class='header'>
+				<h1><img src='anon.png'>Welcome Anonymous</h1>
+			</div>
+		</div>
+		<?php endif; ?>
+		<div class='trans-box'>
+			<div class='content'>
+				<p>The 2016 NFL season, the 97th season in the history of the National Football League (NFL), is scheduled to begin on Thursday, September 8, 2016, with the annual kickoff game featuring the defending Super Bowl 50 champion Denver Broncos hosting the Carolina Panthers. The season will conclude with Super Bowl LI, the league's championship game, on Sunday, February 5, 2017, at NRG Stadium in Houston, Texas.</p>
+				<p>For the first time since the Houston Oilers relocated to Tennessee in 1997, an NFL team relocated from one state to another, as the former St. Louis Rams moved out of St. Louis, Missouri and returned to Los Angeles, California, its home from 1946 to 1994.</p>
+			</div>
+		</div>
+	</div>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae ligula metus. Integer pellentesque mauris eget tempor viverra. Ut mi nulla, molestie malesuada consequat porttitor, consectetur at diam. Nam condimentum justo vitae tristique rutrum. Nullam consequat lectus et nulla condimentum, vel sagittis sem molestie. Aenean viverra ex a metus sagittis bibendum. Phasellus vitae faucibus lacus. Sed interdum viverra arcu a pellentesque. Sed vehicula risus vitae metus varius ornare. Proin rhoncus nunc a ornare dignissim.</p>
-		<p>Nam ac imperdiet elit. Nam pretium felis semper consectetur condimentum. Sed interdum nisl non aliquet blandit. Donec tortor sapien, scelerisque sit amet est vitae, luctus sagittis massa. Ut nec consequat tellus, nec tempus ligula. Pellentesque fringilla ullamcorper fermentum. Etiam nec iaculis est. Duis fermentum imperdiet arcu, in faucibus odio ultricies nec.</p>
+	<div class='posting'>
+		<div class='trans-box'>
+			<h2>Leave a Comment</h2>
+			<p id='disclaimer'>But please; nothing malicious!</p>
+		</div>
 
-		<h2>Comments</h2>
+		<div id='comment-box'>
+			<form method="post" action="add-comment.php">
+				<textarea name="comment" placeholder="Post a new comment" rows="4" cols="50"></textarea>
+				<br/>
+				<input id='btn' type="submit" value="Post Comment"></input>
+			</form>
+		</div>
+	</div>
 
-		<form method="post" action="add-comment.php">
-			<textarea name="comment" placeholder="Post a new comment" rows="4" cols="50"></textarea>
-			<br/>
-			<input type="submit" value="Post Comment"></input>
-		</form>
-
-<?php
+	<?php
 	foreach ($comments_json["comments"] as $index=>$comment) {
 		echo '
 			<div class="comment">
 				<p>'.$comment.'</p>
 				<form method="post" action="delete-comment.php">
 					<input type="hidden" name="index" value="'.$index.'"></input>
-					<input type="submit" value="Delete"></input>
+					<input id="btn" type="submit" value="Delete"></input>
 				</form>
 			</div>
 			';
 	}
 ?>
-	</div>
+</div>
 </body>
 </html>
