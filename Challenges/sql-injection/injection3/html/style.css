@@ -131,6 +131,17 @@ h1 {
 	transform: translateY(-40%);
 }
 
+.err {
+	margin-top: 100px;
+	text-align: center;
+}
+
+#e-back {
+	position: absolute;
+	bottom: 0px;
+	right: 15px;
+}
+
 .infobox {
 	position: relative;
 	width: 500px;
