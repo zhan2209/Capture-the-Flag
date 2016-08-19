@@ -27,6 +27,11 @@
 		}
 		echo "<a class='link' href='.'>Go back</a>";
 		echo "</div>";
+
+		if($_POST['debug'] != 0) {
+			$query = str_replace($table_prefix, "{table_prefix}", $_SESSION['query']);
+			echo "<div class='display-query'><p>".$query."</p></div>";
+		}
 	?>
 </div>
 </body>

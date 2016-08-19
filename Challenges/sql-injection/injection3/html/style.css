@@ -16,6 +16,20 @@ h1 {
 	font-size: 50px;
 }
 
+.display-query {
+	position: relative;
+	width: 75%;
+	height: auto;
+	padding: 5px;
+	border: 2px solid #ddd;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	margin: auto;
+	background-color: #ddd;
+	margin-top: 50px;
+}
+
 .login-form {
 	width: 350px;
 	padding: 40px 30px;
