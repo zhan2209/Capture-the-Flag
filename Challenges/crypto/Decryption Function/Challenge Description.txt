@@ -1,0 +1,20 @@
+
+Description :
+
+You are provided the following encryption function: f(x)=17x+13[26]
+First, you have to encrypt the word INFINITE with this function.
+Then, your mission is to find the decryption function g.
+Finally, you have to decrypt the word CAMPUS.
+
+Indications:
+
+[26] means "modulo 26".
+The decryption function will be of the following form: g(y)=ay+b[26], with a and b natural integers lower than 26, and y=f(x).
+You will enter the flag lowercase on the form
+(crypted word)_(decryption function)_(decrypted word).
+
+
+Example:
+If the encryption of INFINITE was AEXAEAJO, that the function was g(y)=15y+3[26], and that the decryption of GELKT was SUPER, then the flag would be: AEXAEAJO_15y+3[26]_SUPER
+
+
