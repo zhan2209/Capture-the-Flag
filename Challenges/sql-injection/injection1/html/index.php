@@ -1,6 +1,5 @@
 <?php
 session_start();
-include("global.php");
   
 //login
 if(isset($_POST['username'])) {
