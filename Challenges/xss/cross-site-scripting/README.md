@@ -20,11 +20,11 @@ and check the ex1.js will find the flag will show at the same place:
 ## Write up
 
 First this website allow user to add their favorite link. and only the legal name and URL could be added.There are two ways to solve this problem:<br>
-1st method:<br>
+### Method 1 :<br>
 
 1. Make the function levelCompleted() work, such as change if(condition) to if(!condition) 
 	
-2nd method:
+### Method 2:
 1. check the html code, you will find for the site name and site URL are all patterned:
 			
 		<label>Site Name \<input type="text" placeholder="Name of site" maxsize="10" class="form-control" pattern="[A-Za-z]+" required="" name="name"> \</label>
