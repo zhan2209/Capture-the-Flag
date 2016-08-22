@@ -2,7 +2,7 @@
 
 ## Description
 
-Alright, we've fixed our login system. Now nobody will be able to get the flag!
+Only those with a high level of authorization are able to log in and get the flag off of this PC! Will you be one of them?
 
 Category: Intermediate
 

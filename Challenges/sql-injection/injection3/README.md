@@ -2,7 +2,7 @@
 
 ## Description
 
-We've finally wised up and escaped our SQL query input. There's no way we could get hacked again!
+All user input is being escaped for this login form, so there's no way that you could inject anything malicious. If that's a problem, the admin's contact info is available - take it up with him!
 
 Category: Difficult
 

@@ -2,7 +2,7 @@
 
 ## Description
 
-Login to get the flag! But not as just any user; you'll need max authorization. I wonder which users get that level of clearance...
+Good Wood(TM) had to add a login feature to their site due to high demand for their exceptional product; your goal is to find a way around it.
 
 Category: Easy
 

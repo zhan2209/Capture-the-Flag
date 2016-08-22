@@ -2,8 +2,7 @@
 
 ## Description
 
-Okay, I finally added escaping to all the login input. There's no way anybody could get into my site without proper
-credentials now!
+After much trial and error, I think I've finally created a login form that is invulnerable to any injection! As a matter of fact, I'm so confident that I've added a registration feature!
 
 Category: Hard
 
