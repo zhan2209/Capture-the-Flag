@@ -1,16 +1,21 @@
+html {
+	background-color: #ecf3ef;
+}
+
 .flag {
-	border-left: 5px solid #ffff00;
-	background-color: #ffffe6;
-	padding: 10px;
-	margin: 10px;
+	font-size: 50px;
 }
+
 .hint {
-	border-left: 5px solid #0066ff;
-	background-color: #e6f0ff;
+	border-left: 5px solid #D2691E;
+	background-color: #aaaaaa;
+	color: white;
 	padding: 10px;
 	margin: 10px;
 }
+
 .center {
+	text-align: center;
     margin: auto;
     width: 65%;
 	min-width: 400px;
