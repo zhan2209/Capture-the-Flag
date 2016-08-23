@@ -70,6 +70,22 @@ you can calculate each letter one by one, and get the corresponding encryption/d
 	Z 25  <==>  22 W
 ````
 
+NOTE: This is the affine cipher, defined by
+
+````
+	E(x) = (ax + b) mod m
+	D(x) = a^-1(x - b) mod m
+````
+
+where a^-1 is the modular multiplicative inverse of a mod m, which can be solved using the Euclidean algorithm:
+
+````
+	ax - qm = 1
+````
+
+where a and m are given, x represents the inverse (a^-1), and q is an integer multiple that will be discarded.
+See euclidean-solver.py for a simple brute-force solver
+
 ## The flag
 
  flag{TAUTATYD_VNJIPH_23y+13[26]_CONGRATULATION}
