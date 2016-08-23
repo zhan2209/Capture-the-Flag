@@ -58,14 +58,19 @@ div.img {
 	display: inline-block;
 	margin: 5px;
 	border: 1px solid black;
-	width: 180px;
-}
-
-div.img:hover {
-	border: 1px solid blue;
+	height: 180px;
 }
 
 div.img img {
-	width: 100%;
-	height: auto;
+	display: block;
+	width: auto;
+	height: 100%;
+}
+
+div.img:hover {
+	border-color: blue;
+}
+
+#path {
+	margin: 15px;
 }

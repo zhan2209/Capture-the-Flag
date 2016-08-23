@@ -20,7 +20,7 @@
 	</form>
 </div>
 <div id='gallery'>
-	<a class='link' href="./pictures.html.php">Click here to view pictures</a>
+	<a class='link' href="pictures.html.php">Click here to view pictures</a>
 <div>
 <script>
 	function validate() {
