@@ -10,7 +10,7 @@ Take a look at the external libraries... specifically hibernate-validator
 
 ## Flag
 
-See flag.txt
+[a-z0-9!#$%&'*+/=?^_`{|}~-]+(\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*
 
 ## Write-Up
 
