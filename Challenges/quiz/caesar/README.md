@@ -9,7 +9,7 @@ Isn't there a cipher named after Caesar?
 
 ## The flag
 
-Flag{caesarnevercaredmuchforsalad}
+caesarnevercaredmuchforsalad
 
 ## Write-Up
 

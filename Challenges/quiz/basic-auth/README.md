@@ -31,4 +31,4 @@ The username and password are base64-encoded in each request. Decode the values 
 
 ## Flag
 
-flag{Uc@n'tCrackThis!CuzIt'sSuperLooong!}
+Uc@n'tCrackThis!CuzIt'sSuperLooong!

@@ -90,5 +90,8 @@ See euclidean-solver.py for a simple brute-force solver
 
  flag{TAUTATYD_VNJIPH_23y+13[26]_CONGRATULATION}
  
+CURRENT FLAG:
+D(x) = (23x + 13) mod 26
+ 
  
  
