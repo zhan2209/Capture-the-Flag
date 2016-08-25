@@ -22,8 +22,10 @@ The Rail Fence cipher is a form of transposition cipher (https://en.wikipedia.or
 
 For this challenge, we use 5 rails to find the answer:
 
+````
 T.......R.......R.......N.......T.
 .H.....P.E.....I.D.....E.C.....A.A
 ..I...A...T...E...W...O...R...D...
 ...S.S.....T.W.....A.T.....Y.T....
 ....I.......Y.......Y.......P.....
+````
