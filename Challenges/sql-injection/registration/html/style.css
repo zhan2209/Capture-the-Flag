@@ -26,6 +26,10 @@ h3 {
   	padding-bottom: 1em;
 }
 
+h2 {
+    color: #eeeeee;
+}
+
 .main-header {
     position: relative;
     margin: auto;
@@ -134,4 +138,13 @@ a:after {
 
 h1 {
 	color: white;
+}
+
+pre {
+    margin-left: 25px;
+}
+
+code {
+    color: white;
+    margin-left: 25px;
 }

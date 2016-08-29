@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<title>Login.php</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<pre>
+<code>
+&lt;?php
+include "db.inc.php";
+$username = mysqli_real_escape_string($connection, $_POST["username"]);
+$password = mysqli_real_escape_string($connection, $_POST["password"]);
+$query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+$result = mysqli_query($connection, $query);
+echo "&lt;div class='login'&gt;";
+if (mysqli_num_rows($result) === 1) {
+	$row = mysqli_fetch_array($result);
+	echo "&lt;h1&gt;Logged in!&lt;/h1&gt;";
+	echo "&lt;p&gt;Welcome back ".$row['username'].".&lt;/p&gt;";
+	if($row['username'] == 'admin') {
+		$FLAG = file_get_contents('flag.txt');
+		echo "&lt;p&gt;The flag is: $FLAG&lt;/p&gt;";
+	} else {
+		echo "&lt;p&gt;Only the admin may view the flag.&lt;/p&gt;";
+	}
+} else {
+	echo "&lt;h1&gt;Login failed.&lt;/h1&gt;";
+	if($_POST['debug'] != 0) {
+		echo "&lt;p&gt;$query&lt;/p&gt;";
+	}
+}
+echo "&lt;a href='.'&gt;Go back&lt;/a&gt;";
+echo "&lt;/div&gt;";
+?&gt;
+</code>
+</pre>
+<a href='.'>Go back</a>
+</body>
+</html>

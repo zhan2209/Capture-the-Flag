@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<title>Register.php</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<pre>
+<code>
+&lt;?php
+include "db.inc.php";
+$username = $_POST["username"];
+$query = "SELECT * FROM users WHERE username='$username'";
+$result = mysqli_query($connection, $query);
+
+echo "&lt;div class='login'&gt;";
+if(mysqli_num_rows($result) !== 0) {
+	echo "&lt;h2&gt;USERNAME NOT AVAILABLE&lt;/h2&gt;";
+	echo "&lt;p&gt;There is already a(n) '" . htmlspecialchars($username) . "' in our database. Try another username.&lt;/p&gt;";
+	die("&lt;a href='.'&gt;Go back&lt;/a&gt;");
+}
+
+if($username == '') {
+	echo "&lt;p&gt;You didn't enter a username... what're you trying to pull?&lt;/p&gt;";
+	die("&lt;a href='.'&gt;Go back&lt;/a&gt;");
+} else {
+	echo "&lt;h2&gt;USERNAME AVAILABLE&lt;/h2&gt;";
+	echo "&lt;p&gt;'$username' is available, but registration is currently disabled.&lt;/p&gt;";
+	die("&lt;a href='.'&gt;Go back&lt;/a&gt;");
+}
+echo "&lt;/div&gt;";
+?&gt;
+</code>
+</pre>
+<a href='.'>Go back</a>
+</body>
+</html>

@@ -27,6 +27,7 @@
 					<input type="submit" name="action" value="Login" class="btn btn-primary">
 				</form>
 			</div>
+			<a href='./login-source.html'>Source</a>
 			<hr>
 			<div class="panel-heading">
 				<h3 class="panel-title">Register</h3>
@@ -40,6 +41,7 @@
 					<input type="submit" name="action" value="Register" class="btn btn-primary">
 				</form>
 			</div>
+			<a href='./register-source.html'>Source</a>
 		</div>
 	</div>
 </body>
