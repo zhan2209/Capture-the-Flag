@@ -22,6 +22,9 @@
 		if($_POST['bet'] > $_SESSION['wallet']) {
 			$valid = false;
 			$message = "<p>You don't have enough money to make that bet!</p>";
+		} else if($_POST['bet'] < 0) {
+			$valid = false;
+			$message = "<p>Did you really think I'd let you get away with that?</p>";
 		} else if($_POST['guess'] < 0 || $_POST['guess'] > 1000) {
 			$valid = false;
 			$message = "<p>Your guess must be between 0 and 1000.</p>";			
