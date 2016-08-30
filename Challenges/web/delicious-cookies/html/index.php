@@ -1,10 +1,10 @@
 <?php
 
-	$admin_cookie_value = "7468697369736e6f74666c6167";	//thisisnotflag
+	$admin_cookie_value = "false";	//thisisnotflag
 	
 	$cookie_value = '44656c6963696f757320436f6f6b696573';//deliciouscookies
-	$cookie_name = 'User';
-	$Delicious_cookie_name = 'Delicious';
+	$cookie_name = 'isAdmin';
+	$Delicious_cookie_name = 'true';
 	$flag ='666c61677b64656c6963696f75735f636f6f6b69657d';//flag.....
 	
 	if (isset($_COOKIE[$cookie_name])) {

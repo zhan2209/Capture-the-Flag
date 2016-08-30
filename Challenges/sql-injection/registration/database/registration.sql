@@ -36,7 +36,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'admin','impossiblepassword'),(2,'noone','aryastark'),(3,'slimshady','himynameis'),(4,'walterwhite','cantyouhearmeknocking');
+INSERT INTO `users` VALUES (1,'admin','iMp0$$1bleP@s$wOrd'),(2,'noone','aryastark'),(3,'slimshady','himynameis'),(4,'walterwhite','cantyouhearmeknocking');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

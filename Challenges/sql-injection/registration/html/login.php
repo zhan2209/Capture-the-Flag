@@ -5,7 +5,7 @@
 include "db.inc.php";
 $username = mysqli_real_escape_string($connection, $_POST["username"]);
 $password = mysqli_real_escape_string($connection, $_POST["password"]);
-$query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+$query = "SELECT * FROM users WHERE username='$username' AND BINARY password=BINARY '$password'";
 $result = mysqli_query($connection, $query);
 echo "<div class='login'>";
 if (mysqli_num_rows($result) === 1) {
