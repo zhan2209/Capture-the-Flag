@@ -8,7 +8,7 @@ Download the picture, and it can't open with the photo viewer, and check this fi
 
 Open this file use some other source code editor such as NotePad++, it will show :
 ````
-T2NkbiB5dGRpYiBkbiB3am1kaWIgCi0tTWR4Y3ZteSBBenRpaHZpIC0tIApBZ3ZiIHsgYXZoanBuIGd2bm8gcmpteW59Lg==
+Ik9jZG4geXRkaWIgZG4gd2ptZGliLiINCiAtTWR4Y3ZteSBBenRpaHZpDQphZ3Zie2F2aGpwbl9ndm5vX3JqbXlufQ==
 ````
 and abviously it is base64 encoded. Decode it we will get 
 ````
