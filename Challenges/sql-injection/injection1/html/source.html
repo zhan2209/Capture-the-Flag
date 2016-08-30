@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<title>Index.php</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1 style="text-align:center;margin-top:100px">Source</h1>
+<div class="source">
+<pre>
+	<code>
+	&lt;?php
+	session_start();
+	  
+	//login
+	if(isset($_POST['username'])) {
+		include 'db.inc.php';
+		
+		$username = $_POST["username"];
+		$password = $_POST["password"];
+		$query = "SELECT * FROM user WHERE username='$username' AND password='$password'";
+		$result = mysqli_query($connection, $query);
+		
+		if(mysqli_num_rows($result) == 1) { // login successful
+			$_SESSION['login'] = true;
+			$row = mysqli_fetch_array($result);
+			$_SESSION['userinfo'] = $row;
+			header('location: loggedin.html.php');
+		}
+		else { header('location: loginfailed.html.php'); } // login failed
+	}
+	  
+	include 'home.html.php';
+	?&gt;
+	</code>
+</pre>
+<a href='.' id='back'>Back</a>
+</div>
+</body>
+</html>
