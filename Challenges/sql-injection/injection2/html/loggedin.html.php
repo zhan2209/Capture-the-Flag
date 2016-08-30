@@ -19,7 +19,7 @@
 		} 
 		echo "<a href='.'>Go back</a>";
 		echo "</div></div></div></div>";
-	} else {
+	} else { # they didn't actually login...
 		header('Location: loginfailed.html.php');
 	}
 ?>

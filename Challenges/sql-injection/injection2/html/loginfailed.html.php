@@ -11,10 +11,10 @@
 <?php
 	  session_start();
 	  if($_SESSION['debug'] == 1) {
-	    echo "<div class='query'><pre>";
-	    echo '<b>username</b>: '.$_SESSION['thisuser'], "\n";
-	    echo '<b>password</b>: '.$_SESSION['thispass'], "\n";
-	    echo '<b>query</b>: '.$_SESSION['thisquer'], "\n";
+	    echo "<div class='query'><pre id='query'>";
+	    echo '<b>username</b>: '.$_SESSION['user'], "\n";
+	    echo '<b>password</b>: '.$_SESSION['pass'], "\n";
+	    echo '<b>query</b>: '.$_SESSION['quer'], "\n";
 	    echo "</pre></div>";
 	  }
 	?>
