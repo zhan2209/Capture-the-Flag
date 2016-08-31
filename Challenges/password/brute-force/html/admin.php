@@ -27,12 +27,10 @@ if(!isset($_SESSION['first-attempt'])) {
 <?php
 
 			function authenticate($your_password) {
-				$password = "jdmnaziwx";
+				$password = "M1opQ$2nVetO0L";
 
 				if (!is_string($your_password) || strlen($your_password) != strlen($password))
 					return(0);
-
-				$your_password = strtolower($your_password);
 
 				for ($i = 0; $i < strlen($password); $i++) {
 					if($password[$i] != $your_password[$i])

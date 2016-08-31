@@ -183,3 +183,42 @@ h1 {
 	bottom: -5;
 	right: 10;
 }
+
+#src-link {
+	position: absolute;
+	bottom: -5;
+	left: 10;
+}
+
+#src-back {
+	float: right;
+	margin-right: 10px;
+}
+
+.src-box {
+	position: relative;
+	width: 650px;
+	height: 250;
+	padding: 5px 7px 5px 15px;
+	border: 2px solid #ddd;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	margin: auto;
+	background-color: #ddd;
+}
+
+.src-cont {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 40%;
+	-moz-transform: translateY(-40%);
+	-ms-transform: translateY(-40%);
+	-webkit-transform: translateY(-40%);
+	transform: translateY(-40%);
+}
+
+#source {
+
+}

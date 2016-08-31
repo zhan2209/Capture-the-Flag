@@ -17,12 +17,10 @@
 	&lt;h1&gt;Admin Tools&lt;/h1&gt;
 &lt;?php
 	function authenticate($your_password) {
-		$password = ****************;
+		$password = ********************;
 
 		if (!is_string($your_password) || strlen($your_password) != strlen($password))
 			return(0);
-
-		$your_password = strtolower($your_password);
 
 		for ($i = 0; $i &lt; strlen($password); $i++) {
 			if($password[$i] != $your_password[$i])

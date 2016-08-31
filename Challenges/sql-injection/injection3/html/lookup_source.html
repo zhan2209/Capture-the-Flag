@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<title>lookup_user.php</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class='src-cont'>
+	<div class='src-box'>
+	<pre>
+	<code id='source'>
+
+	&lt;?php
+	  include 'db.inc.php';
+	  include 'globals.php';
+	  echo "&lt;link rel='stylesheet' type='text/css' href='style.css'&gt;";
+
+	  $id = mysqli_real_escape_string($connection, $_GET["id"]);
+	  $query = "SELECT * FROM ${table_prefix}users WHERE id=$id";
+	  $result = mysqli_query($connection, $query);
+	  $row = mysqli_fetch_array($result);
+
+	  echo "&lt;div class='info-cont'&gt;";
+	  echo "&lt;div class='infobox'&gt;";
+
+	  // user does not exist (or something fishy is going on...)
+	  if (mysqli_num_rows($result) !== 1) {
+	  	die("	&lt;p class='err'&gt;Could not find user.&lt;/p&gt;
+	  		&lt;a id='e-back' class='link' href='.'&gt;Go back&lt;/a&gt;
+	  		&lt;/div&gt;&lt;/div&gt;
+	  		");
+	  }
+	  // else print the user's information
+	  echo "
+		&lt;div id='textline'&gt;
+			&lt;p class='left'&gt;User info for id:&lt;/p&gt;
+			&lt;p class='right'&gt;".htmlspecialchars($row['id'])."&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div id='textline'&gt;
+			&lt;p class='left'&gt;Username:&lt;/p&gt;
+			&lt;p class='right'&gt;".htmlspecialchars($row['username'])."&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div id='textline'&gt;
+			&lt;p class='left'&gt;Email:&lt;/p&gt;
+			&lt;p class='right'&gt;".htmlspecialchars($row['email'])."&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div id='textline'&gt;
+			&lt;p class='left'&gt;Authrorization:&lt;/p&gt;
+			&lt;p class='right'&gt;".htmlspecialchars($row['authorization'])."&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;a id='back' class='link' href='.'&gt;Go back&lt;/a&gt;
+		&lt;/div&gt;&lt;/div&gt;
+		";
+	?&gt;
+
+	</code>
+	<a href='./lookup_user.php?id=1' id='src-back' class='link'>Back</a>
+	</pre>
+</div></div>
+</body>
+</html>
