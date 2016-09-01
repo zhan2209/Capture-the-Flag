@@ -1,9 +1,9 @@
 <?php
 if(!session_id()) session_start();
 if($_SESSION['won']) {
-	$flag_file = '/var/www/hid/web/lottery/flag.txt.gpg';
+	$flag_file = '/var/www/hid/web/lottery/flag.txt';
 	header("Content-type: text/plain");
-	header("Content-disposition: attachment; filename='flag.txt.gpg'");
+	header("Content-disposition: attachment; filename='flag.txt'");
 	readfile($flag_file);
 } else {
 	$troll_file = '/var/www/hid/web/lottery/troll.txt';

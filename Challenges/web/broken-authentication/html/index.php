@@ -2,12 +2,12 @@
 <html style="background-color:powderblue;">
 <link rel="stylesheet" type="text/css" href="style.css">
 	<head>
-    <title>Cherry Arden's personal site</title>
+    <title>Cherry Arden's Personal Site</title>
 	</head>
 	<body>
 	
 	<div style="text-align:center;">
-		<h1>Welcome to Broken Authentication!</h1>
+		<h1>Welcome to My Website!</h1>
 	</div>
 		<style>
 			table {
@@ -28,11 +28,11 @@
 	
 		<?php
 			$cookie_name = "user";
-			$cookie_value = "Sk9ITitET0U%3D";	//JOHN+DOE	
+			$cookie_value = "81993dad8195b9a2ce4573c5cf9805a0";	// JOHN+DOE
 			$cookie_name2 = "welcome";
-			$cookie_welcome_yes_value = "WUVT";// YES
-			$cookie_value2 = "Tk8%3D"; // NO	
-			$admin_cookie_value = "Q0hFUlJZK0FSREVO";
+			$cookie_welcome_yes_value = "7469a286259799e5b37e5db9296f00b3"; // YES
+			$cookie_value2 = "c2f3f489a00553e7a01d369c103c7251"; // NO
+			$admin_cookie_value = "f7d99f4b625cfe7538e196b11af8a4e5"; // CHERRY+ARDEN
 			
 			if (isset($_COOKIE[$cookie_name])) {
 				$cookie_value = $_COOKIE[$cookie_name];
@@ -63,9 +63,8 @@
 					</div>";
 				echo "<div style='text-align:center;'>
 						<p >
-							It seems you are not the owner of current page. <br>
-							Knowing what websites typically use to identify their users<br>
-							- try to get rid of that ban.
+							Because it seems you are not the owner of this page.<br>
+							Can you change that?<br>
 						</p>
 					</div>";
 			} 
@@ -88,8 +87,11 @@
 						</table>";
 					echo "<div style='text-align:center;'>
 							<h3>
-								Flag{broken_authentication}
+								Welcome back Cherry!
 							</h3>
+							<p>
+								Here's your flag: flag{broken_authentication}
+							</p>
 						</div>";
 				}
 			}

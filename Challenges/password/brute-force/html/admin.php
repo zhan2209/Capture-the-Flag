@@ -49,7 +49,7 @@ if(!isset($_SESSION['first-attempt'])) {
 			} else { 																					?>
 				<p>Please identify yourself as the admin by entering your credentials below.</p>
 				<form action='admin.php' method='post'>
-					<input type='password' name='your_password' maxlength='9'>
+					<input type='password' name='your_password' maxlength='20'>
 					<input type='submit' value='Authenticate'>
 				</form>
 <?php			if(!$_SESSION['first-attempt']) {
