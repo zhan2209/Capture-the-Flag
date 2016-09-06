@@ -24,8 +24,7 @@ $(function() {
                     if (testForScript("flag", [siteName, siteURL], lastAlert)) {
 
                         $("#demo").removeClass("alert-info").addClass("alert-success");
-                        $("#demo").text("You made it!")
-						levelCompleted();
+						c();
                     }
                 })
             }

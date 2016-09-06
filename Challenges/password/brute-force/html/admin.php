@@ -27,7 +27,7 @@ if(!isset($_SESSION['first-attempt'])) {
 <?php
 
 			function authenticate($your_password) {
-				$password = "M1opQ$2nVetO0L";
+				$password = "M1opQ$2nVetO0LaT6#l9@d"; //len=22
 
 				if (!is_string($your_password) || strlen($your_password) != strlen($password))
 					return(0);
@@ -49,7 +49,7 @@ if(!isset($_SESSION['first-attempt'])) {
 			} else { 																					?>
 				<p>Please identify yourself as the admin by entering your credentials below.</p>
 				<form action='admin.php' method='post'>
-					<input type='password' name='your_password' maxlength='20'>
+					<input type='password' name='your_password' maxlength='30' autofocus='autofocus'>
 					<input type='submit' value='Authenticate'>
 				</form>
 <?php			if(!$_SESSION['first-attempt']) {
