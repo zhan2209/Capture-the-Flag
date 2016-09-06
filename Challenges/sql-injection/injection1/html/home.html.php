@@ -1,3 +1,6 @@
+<?php
+if(!session_id()) session_start();
+?>
 <!doctype html>
 <html>
 <head>
@@ -23,7 +26,7 @@
 		  	<input type="submit" id="login-button" value="Login"></li>
 		  	<input type="hidden" id="debug" name="debug" value="0">
 		  	<a href='./source.html' id='source-btn'>Source</a>
-		  	<?php session_start();$_SESSION['debug']=$_POST['debug'];?>
+		  	<?php $_SESSION['debug']=$_POST['debug']; ?>
 		</ul>
  	</form>
 	</section>

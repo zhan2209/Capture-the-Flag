@@ -1,5 +1,5 @@
 <?php
-session_start();
+if(!session_id()) session_start();
   
 //login
 if(isset($_POST['username'])) {
@@ -7,7 +7,8 @@ if(isset($_POST['username'])) {
 	
 	$username = $_POST["username"];
 	$password = $_POST["password"];
-	$query = "SELECT * FROM user WHERE username='$username' AND BINARY password=BINARY '$password'";
+	$query = "SELECT * FROM user WHERE username='$username' AND password='$password'";
+	$_SESSION['query'] = $query;
 	$result = mysqli_query($connection, $query);
 	
 	if(mysqli_num_rows($result) == 1) { // login successful

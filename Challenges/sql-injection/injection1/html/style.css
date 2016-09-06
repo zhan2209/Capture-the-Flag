@@ -184,3 +184,17 @@ div.img img {
   margin-top: -25px;
   margin-right: 25px;
 }
+
+.query {
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 20px 20px;
+  width: 66%;
+  background: white;
+  border: 1px #989 solid;
+  border-radius: 3px;
+  -moz-box-shadow: 3px 3px 3px 3px #767;
+  -webkit-box-shadow: 3px 3px 3px 3px #767;
+  box-shadow: 3px 3px 3px 3px #767;
+}
