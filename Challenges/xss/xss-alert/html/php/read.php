@@ -29,11 +29,11 @@
 		<link type='text/css' rel='stylesheet' href='/static/game.css'>
 		<script src='/static/game.js'></script>
 		<h1 id='level-title'style='color:Red'>! T^T !  </h1>
-		<h2>Oops! Something wrong heppened.</h2>
+		<h2>Oops! Something went wrong.</h2>
 		<div id='instructions'>
 		  Based on your browser it seems like you haven't passed the
-		  the game. Please go back to the previous page
-		  and complete the challenge. Or back later, try to refresh this page, it might work ;) Good Luck!<br><br>
+		  the challenge. Please go back to the <a href='..'>previous page</a>
+		  and complete the challenge. Good Luck!<br><br>
 		</div>
 		";
 	} 
