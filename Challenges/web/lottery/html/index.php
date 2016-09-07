@@ -67,7 +67,7 @@
 	<form method='post' onsubmit="timer()">
 		<div class='guess-line'>
 			<label for='guess'>Guess a number between 0-1000:</label>
-			<input type='text' id='guess' name='guess'>
+			<input type='text' id='guess' name='guess' autofocus='autofocus'>
 			<input type='submit' id='submit-guess' value='Submit Guess'>
 		</div>
 		<div class='bet-btns'>

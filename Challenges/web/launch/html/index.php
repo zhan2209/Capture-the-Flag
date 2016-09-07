@@ -21,7 +21,7 @@
 		<h1 id='head'>Welcome Magistrate</h1>
 		<p id='instr'>Enter your credentials to recieve the cancellation code.</p>
 		<form name="password" method='post' onsubmit="return validate()">
-			<input type="password" id="pass" name="passinp" placeholder="Password" maxlength=16 required>
+			<input type="password" id="pass" name="passinp" placeholder="Password" autofocus='autofocus' maxlength=16 required>
 			<input type="submit" id="sub" value="Login">
 		</form>
 		<?php

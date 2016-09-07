@@ -60,7 +60,7 @@
 
 		<div id='comment-box'>
 			<form method="post" action="add-comment.php">
-				<textarea name="comment" placeholder="Post a new comment" rows="4" cols="50"></textarea>
+				<textarea name="comment" placeholder="Post a new comment" rows="4" cols="50" autofocus='autofocus'></textarea>
 				<br/>
 				<input id='btn' type="submit" value="Post Comment"></input>
 			</form>

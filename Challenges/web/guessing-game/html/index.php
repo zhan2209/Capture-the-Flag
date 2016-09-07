@@ -28,7 +28,7 @@
 	<p id='desc'>Guess the password below.</p>
 	<div id='form'>
 	<form action='' method='GET'>
-		<input type='text' name='attempt' maxlength=16>
+		<input type='text' name='attempt' maxlength=16 autofocus='autofocus'>
 		<input type='submit' value='Guess!'>
 	</form>	
 	</div>

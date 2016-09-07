@@ -16,7 +16,7 @@
 				<form class="ex1">
 					<!-- Lable for Site Name -->
 					<label>Site Name <input type="text" placeholder="Name of site" maxsize="10" 
-							class="form-control" pattern="[A-Za-z]+" required=""  name="name">
+							class="form-control" pattern="[A-Za-z]+" required=""  name="name"  autofocus='autofocus'>
 					</label>
 					<!-- Lable for Site URL -->
 					<label>Site URL <input class="form-control" placeholder="URL of site" 

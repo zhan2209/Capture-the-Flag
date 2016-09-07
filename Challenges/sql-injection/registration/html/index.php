@@ -36,7 +36,7 @@
 				<form action="register.php" method="POST">
 					<div class="form-group">
 						<label for="reg_username">Username:</label>
-						<input type="text" id="reg_username" name="username" class="form-control">
+						<input type="text" id="reg_username" name="username" class="form-control" autofocus='autofocus'>
 					</div>
 					<input type="submit" name="action" value="Register" class="btn btn-primary">
 				</form>

@@ -19,7 +19,7 @@ if(!session_id()) session_start();
   	<form name='login' action='index.php' method='POST' accept-charset='utf-8'>
   		<ul>
   			<li><label for="username">Username</label>
-		  	<input type="text" id="username" name="username" placeholder="Username" required></li>
+		  	<input type="text" id="username" name="username" placeholder="Username" autofocus='autofocus' required></li>
 		  	<li><label for="password">Password</label>
 		  	<input type="password" id="password" name="password" placeholder="Password" required></li>
 		  	<li>

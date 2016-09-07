@@ -12,7 +12,7 @@
   		<div class="inner-screen">
   			<div class="form">
  				<form action="index.php" method="POST">
-			  		<input type="text" id="username" name="username" placeholder="USERNAME" required>
+			  		<input type="text" id="username" name="username" placeholder="USERNAME" autofocus='autofocus' required>
 			  		<input type="password" id="password" name="password" placeholder="PASSWORD" required>
 			  		<input type="submit" id="submit" value="Submit">
 					<input type="hidden" name="debug" value="0">
