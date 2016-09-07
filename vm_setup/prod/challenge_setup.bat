@@ -53,6 +53,7 @@ mkdir challenge_vm
 cd challenge_vm
 move %p%\%box% C:\challenge_vm
 copy %p%\Vagrantfile C:\challenge_vm
+copy %p%\README.txt C:\challenge_vm
 
 :: edit Vagrantfile
 echo "[.] Editing Vagrantfile..."
