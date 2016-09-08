@@ -1,4 +1,6 @@
-# File Upload
+# File Upload (UNUSED)
+
+To make this challenge active, the 0s at the end of the directory names must be removed.
 
 ## Description
 
