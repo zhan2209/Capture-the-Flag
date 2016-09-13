@@ -1,7 +1,7 @@
 # LIST OF CHALLENGES
 
 ## BROWSER
-### Hacking
+### Hacking (UNUSED)
 
 
 
@@ -55,7 +55,7 @@
 ### Lottery
 ### QR-Code
 ### Spoof-Browser
-### Upload
+### Upload (UNUSED)
 
 
 
